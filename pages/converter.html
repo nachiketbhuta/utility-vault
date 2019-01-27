@@ -27,7 +27,11 @@
     </nav>
 
     <section>
-      <p style="background: #000; color: #fff; padding: 0;">Hello</p>
+      <input type="text" name="from" id="from" placeholder="From">
+      <input type="number" name="from_amt" id="from_amt"><br>
+      <input type="text" name="to" id="to" placeholder="To">
+      <input type="number" name="to_amt" id="to_amt" disabled><br><br>
+      <button type="submit" name="submit" class="btn btn-primary" id="submit">Submit</button>
     </section>
 
     <footer><p>Copyright &copy; 2019</p></footer>
@@ -36,8 +40,11 @@
     <script src="../assets/js/jquery.js"></script>
 
     <!-- Bootstrap JS Files-->
-    <script src="../assets/js/jquery-slim.min.js"></script>
+    <!-- <script src="../assets/js/jquery-slim.min.js"></script> -->
     <script src="../assets/js/popper.min.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../services/js/currency-converter.js"></script>
   </body>
 </html>
