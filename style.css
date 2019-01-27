@@ -7,25 +7,37 @@
 
 html, body {
   font-family: 'Open Sans';
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
+  margin: 0px;
+  padding: 0px;
   height: 100%;
   width: 100%;
 }
 
+header {
+  padding: 0px;
+  margin: 0px;
+}
+
 /* Navigation Bar */
-nav {
+.main-nav {
   background: var(--primary-color);
   text-align: right;
 }
 
+ul, ol {
+  margin: 0px;
+  list-style: none;
+  padding: 0;
+}
+
 /* Navigation List Items */
-nav li {
+.main-nav li {
   display: inline-block;
+  border: none !important;
 }
 
 /* Navigation list links */
-nav li a {
+.main-nav li a {
   color: #FFF;
   text-align: center;
   text-decoration: none;
@@ -34,14 +46,31 @@ nav li a {
   display: inline-block;
   font-weight: bolder;
   text-transform: uppercase;
-  padding: 15px 30px 15px 30px;
+  padding: 15px 25px 15px 25px;
   transition: .5s;
-  line-height: 1;
+  line-height: 1.4;
 }
 
 /* Navigation links hover */
-nav li a:hover {
+.main-nav li a:hover {
   background: var(--dark-color);
   color: #FFF;
   text-decoration: none;
+}
+
+/* Footer */
+footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  background: var(--primary-color);
+}
+
+/* Footer text */
+footer p {
+  font-size: 14px;
+  text-align: center;
+  padding-top: 10px;
+  color: #fff;
+  text-transform: uppercase;
 }
