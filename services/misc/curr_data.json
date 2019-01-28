@@ -1,0 +1,710 @@
+[
+    {
+      "curr_full": "Australia Dollar",
+      "curr_short": "AUD"
+    },
+    {
+      "curr_full": "Great Britain Pound",
+      "curr_short": "GBP"
+    },
+    {
+      "curr_full": "Euro",
+      "curr_short": "EUR"
+    },
+    {
+      "curr_full": "Japan Yen",
+      "curr_short": "JPY"
+    },
+    {
+      "curr_full": "Switzerland Franc",
+      "curr_short": "CHF"
+    },
+    {
+      "curr_full": "USA Dollar",
+      "curr_short": "USD"
+    },
+    {
+      "curr_full": "Afghanistan Afghani",
+      "curr_short": "AFN"
+    },
+    {
+      "curr_full": "Albania Lek",
+      "curr_short": "ALL"
+    },
+    {
+      "curr_full": "Algeria Dinar",
+      "curr_short": "DZD"
+    },
+    {
+      "curr_full": "Angola Kwanza",
+      "curr_short": "AOA"
+    },
+    {
+      "curr_full": "Argentina Peso",
+      "curr_short": "ARS"
+    },
+    {
+      "curr_full": "Armenia Dram",
+      "curr_short": "AMD"
+    },
+    {
+      "curr_full": "Aruba Florin",
+      "curr_short": "AWG"
+    },
+    {
+      "curr_full": "Australia Dollar",
+      "curr_short": "AUD"
+    },
+    {
+      "curr_full": "Austria Schilling",
+      "curr_short": "ATS"
+    },
+    {
+      "curr_full": "Belgium Franc",
+      "curr_short": "BEF"
+    },
+    {
+      "curr_full": "Azerbaijan New Manat",
+      "curr_short": "AZN"
+    },
+    {
+      "curr_full": "Bahamas Dollar",
+      "curr_short": "BSD"
+    },
+    {
+      "curr_full": "Bahrain Dinar",
+      "curr_short": "BHD"
+    },
+    {
+      "curr_full": "Bangladesh Taka",
+      "curr_short": "BDT"
+    },
+    {
+      "curr_full": "Barbados Dollar",
+      "curr_short": "BBD"
+    },
+    {
+      "curr_full": "Belarus Ruble",
+      "curr_short": "BYR"
+    },
+    {
+      "curr_full": "Belize Dollar",
+      "curr_short": "BZD"
+    },
+    {
+      "curr_full": "Bermuda Dollar",
+      "curr_short": "BMD"
+    },
+    {
+      "curr_full": "Bhutan Ngultrum",
+      "curr_short": "BTN"
+    },
+    {
+      "curr_full": "Bolivia Boliviano",
+      "curr_short": "BOB"
+    },
+    {
+      "curr_full": "Bosnia Mark",
+      "curr_short": "BAM"
+    },
+    {
+      "curr_full": "Botswana Pula",
+      "curr_short": "BWP"
+    },
+    {
+      "curr_full": "Brazil Real",
+      "curr_short": "BRL"
+    },
+    {
+      "curr_full": "Great Britain Pound",
+      "curr_short": "GBP"
+    },
+    {
+      "curr_full": "Brunei Dollar",
+      "curr_short": "BND"
+    },
+    {
+      "curr_full": "Bulgaria Lev",
+      "curr_short": "BGN"
+    },
+    {
+      "curr_full": "Burundi Franc",
+      "curr_short": "BIF"
+    },
+    {
+      "curr_full": "CFA Franc BCEAO",
+      "curr_short": "XOF"
+    },
+    {
+      "curr_full": "CFA Franc BEAC",
+      "curr_short": "XAF"
+    },
+    {
+      "curr_full": "CFP Franc",
+      "curr_short": "XPF"
+    },
+    {
+      "curr_full": "Cambodia Riel",
+      "curr_short": "KHR"
+    },
+    {
+      "curr_full": "Canada Dollar",
+      "curr_short": "CAD"
+    },
+    {
+      "curr_full": "Cape Verde Escudo",
+      "curr_short": "CVE"
+    },
+    {
+      "curr_full": "Cayman Islands Dollar",
+      "curr_short": "KYD"
+    },
+    {
+      "curr_full": "Chili Peso",
+      "curr_short": "CLP"
+    },
+    {
+      "curr_full": "China Yuan/Renminbi",
+      "curr_short": "CNY"
+    },
+    {
+      "curr_full": "Colombia Peso",
+      "curr_short": "COP"
+    },
+    {
+      "curr_full": "Comoros Franc",
+      "curr_short": "KMF"
+    },
+    {
+      "curr_full": "Congo Franc",
+      "curr_short": "CDF"
+    },
+    {
+      "curr_full": "Costa Rica Colon",
+      "curr_short": "CRC"
+    },
+    {
+      "curr_full": "Croatia Kuna",
+      "curr_short": "HRK"
+    },
+    {
+      "curr_full": "Cuba Convertible Peso",
+      "curr_short": "CUC"
+    },
+    {
+      "curr_full": "Cuba Peso",
+      "curr_short": "CUP"
+    },
+    {
+      "curr_full": "Cyprus Pound",
+      "curr_short": "CYP"
+    },
+    {
+      "curr_full": "Czech Koruna",
+      "curr_short": "CZK"
+    },
+    {
+      "curr_full": "Denmark Krone",
+      "curr_short": "DKK"
+    },
+    {
+      "curr_full": "Djibouti Franc",
+      "curr_short": "DJF"
+    },
+    {
+      "curr_full": "Dominican Republich Peso",
+      "curr_short": "DOP"
+    },
+    {
+      "curr_full": "East Caribbean Dollar",
+      "curr_short": "XCD"
+    },
+    {
+      "curr_full": "Egypt Pound",
+      "curr_short": "EGP"
+    },
+    {
+      "curr_full": "El Salvador Colon",
+      "curr_short": "SVC"
+    },
+    {
+      "curr_full": "Estonia Kroon",
+      "curr_short": "EEK"
+    },
+    {
+      "curr_full": "Ethiopia Birr",
+      "curr_short": "ETB"
+    },
+    {
+      "curr_full": "Euro",
+      "curr_short": "EUR"
+    },
+    {
+      "curr_full": "Falkland Islands Pound",
+      "curr_short": "FKP"
+    },
+    {
+      "curr_full": "Finland Markka",
+      "curr_short": "FIM"
+    },
+    {
+      "curr_full": "Fiji Dollar",
+      "curr_short": "FJD"
+    },
+    {
+      "curr_full": "Gambia Dalasi",
+      "curr_short": "GMD"
+    },
+    {
+      "curr_full": "Georgia Lari",
+      "curr_short": "GEL"
+    },
+    {
+      "curr_full": "Germany Mark",
+      "curr_short": "DMK"
+    },
+    {
+      "curr_full": "Ghana New Cedi",
+      "curr_short": "GHS"
+    },
+    {
+      "curr_full": "Gibraltar Pound",
+      "curr_short": "GIP"
+    },
+    {
+      "curr_full": "Greece Drachma",
+      "curr_short": "GRD"
+    },
+    {
+      "curr_full": "Guatemala Quetzal",
+      "curr_short": "GTQ"
+    },
+    {
+      "curr_full": "Guinea Franc",
+      "curr_short": "GNF"
+    },
+    {
+      "curr_full": "Guyana Dollar",
+      "curr_short": "GYD"
+    },
+    {
+      "curr_full": "Haiti Gourde",
+      "curr_short": "HTG"
+    },
+    {
+      "curr_full": "Honduras Lempira",
+      "curr_short": "HNL"
+    },
+    {
+      "curr_full": "Hong Kong Dollar",
+      "curr_short": "HKD"
+    },
+    {
+      "curr_full": "Hungary Forint",
+      "curr_short": "HUF"
+    },
+    {
+      "curr_full": "Iceland Krona",
+      "curr_short": "ISK"
+    },
+    {
+      "curr_full": "India Rupee",
+      "curr_short": "INR"
+    },
+    {
+      "curr_full": "Indonesia Rupiah",
+      "curr_short": "IDR"
+    },
+    {
+      "curr_full": "Iran Rial",
+      "curr_short": "IRR"
+    },
+    {
+      "curr_full": "Iraq Dinar",
+      "curr_short": "IQD"
+    },
+    {
+      "curr_full": "Ireland Pound",
+      "curr_short": "IED"
+    },
+    {
+      "curr_full": "Israel New Shekel",
+      "curr_short": "ILS"
+    },
+    {
+      "curr_full": "Italy Lira",
+      "curr_short": "ITL"
+    },
+    {
+      "curr_full": "Jamaica Dollar",
+      "curr_short": "JMD"
+    },
+    {
+      "curr_full": "Japan Yen",
+      "curr_short": "JPY"
+    },
+    {
+      "curr_full": "Jordan Dinar",
+      "curr_short": "JOD"
+    },
+    {
+      "curr_full": "Kazakhstan Tenge",
+      "curr_short": "KZT"
+    },
+    {
+      "curr_full": "Kenya Shilling",
+      "curr_short": "KES"
+    },
+    {
+      "curr_full": "Kuwait Dinar",
+      "curr_short": "KWD"
+    },
+    {
+      "curr_full": "Kyrgyzstan Som",
+      "curr_short": "KGS"
+    },
+    {
+      "curr_full": "Laos Kip",
+      "curr_short": "LAK"
+    },
+    {
+      "curr_full": "Latvia Lats",
+      "curr_short": "LVL"
+    },
+    {
+      "curr_full": "Lebanon Pound",
+      "curr_short": "LBP"
+    },
+    {
+      "curr_full": "Lesotho Loti",
+      "curr_short": "LSL"
+    },
+    {
+      "curr_full": "Liberia Dollar",
+      "curr_short": "LRD"
+    },
+    {
+      "curr_full": "Libya Dinar",
+      "curr_short": "LYD"
+    },
+    {
+      "curr_full": "Lithuania Litas",
+      "curr_short": "LTL"
+    },
+    {
+      "curr_full": "Luxembourg Franc",
+      "curr_short": "LUF"
+    },
+    {
+      "curr_full": "Macau Pataca",
+      "curr_short": "MOP"
+    },
+    {
+      "curr_full": "Macedonia Denar",
+      "curr_short": "MKD"
+    },
+    {
+      "curr_full": "Malagasy Ariary",
+      "curr_short": "MGA"
+    },
+    {
+      "curr_full": "Malawi Kwacha",
+      "curr_short": "MWK"
+    },
+    {
+      "curr_full": "Malaysia Ringgit",
+      "curr_short": "MYR"
+    },
+    {
+      "curr_full": "Maldives Rufiyaa",
+      "curr_short": "MVR"
+    },
+    {
+      "curr_full": "Malta Lira",
+      "curr_short": "MTL"
+    },
+    {
+      "curr_full": "Mauritania Ouguiya",
+      "curr_short": "MRO"
+    },
+    {
+      "curr_full": "Mauritius Rupee",
+      "curr_short": "MUR"
+    },
+    {
+      "curr_full": "Mexico Peso",
+      "curr_short": "MXN"
+    },
+    {
+      "curr_full": "Moldova Leu",
+      "curr_short": "MDL"
+    },
+    {
+      "curr_full": "Mongolia Tugrik",
+      "curr_short": "MNT"
+    },
+    {
+      "curr_full": "Morocco Dirham",
+      "curr_short": "MAD"
+    },
+    {
+      "curr_full": "Mozambique New Metical",
+      "curr_short": "MZN"
+    },
+    {
+      "curr_full": "Myanmar Kyat",
+      "curr_short": "MMK"
+    },
+    {
+      "curr_full": "NL Antilles Guilder",
+      "curr_short": "ANG"
+    },
+    {
+      "curr_full": "Namibia Dollar",
+      "curr_short": "NAD"
+    },
+    {
+      "curr_full": "Nepal Rupee",
+      "curr_short": "NPR"
+    },
+    {
+      "curr_full": "Netherlands Guilder",
+      "curr_short": "NLG"
+    },
+    {
+      "curr_full": "New Zealand Dollar",
+      "curr_short": "NZD"
+    },
+    {
+      "curr_full": "Nicaragua Cordoba Oro",
+      "curr_short": "NIO"
+    },
+    {
+      "curr_full": "Nigeria Naira",
+      "curr_short": "NGN"
+    },
+    {
+      "curr_full": "North Korea Won",
+      "curr_short": "KPW"
+    },
+    {
+      "curr_full": "Norway Kroner",
+      "curr_short": "NOK"
+    },
+    {
+      "curr_full": "Oman Rial",
+      "curr_short": "OMR"
+    },
+    {
+      "curr_full": "Pakistan Rupee",
+      "curr_short": "PKR"
+    },
+    {
+      "curr_full": "Panama Balboa",
+      "curr_short": "PAB"
+    },
+    {
+      "curr_full": "Papua New Guinea Kina",
+      "curr_short": "PGK"
+    },
+    {
+      "curr_full": "Paraguay Guarani",
+      "curr_short": "PYG"
+    },
+    {
+      "curr_full": "Peru Nuevo Sol",
+      "curr_short": "PEN"
+    },
+    {
+      "curr_full": "Philippines Peso",
+      "curr_short": "PHP"
+    },
+    {
+      "curr_full": "Poland Zloty",
+      "curr_short": "PLN"
+    },
+    {
+      "curr_full": "Portugal Escudo",
+      "curr_short": "PTE"
+    },
+    {
+      "curr_full": "Qatar Rial",
+      "curr_short": "QAR"
+    },
+    {
+      "curr_full": "Romania New Lei",
+      "curr_short": "RON"
+    },
+    {
+      "curr_full": "Russia Rouble",
+      "curr_short": "RUB"
+    },
+    {
+      "curr_full": "Rwanda Franc",
+      "curr_short": "RWF"
+    },
+    {
+      "curr_full": "Samoa Tala",
+      "curr_short": "WST"
+    },
+    {
+      "curr_full": "Sao Tome/Principe Dobra",
+      "curr_short": "STD"
+    },
+    {
+      "curr_full": "Saudi Arabia Riyal",
+      "curr_short": "SAR"
+    },
+    {
+      "curr_full": "Serbia Dinar",
+      "curr_short": "RSD"
+    },
+    {
+      "curr_full": "Seychelles Rupee",
+      "curr_short": "SCR"
+    },
+    {
+      "curr_full": "Sierra Leone Leone",
+      "curr_short": "SLL"
+    },
+    {
+      "curr_full": "Singapore Dollar",
+      "curr_short": "SGD"
+    },
+    {
+      "curr_full": "Slovakia Koruna",
+      "curr_short": "SKK"
+    },
+    {
+      "curr_full": "Slovenia Tolar",
+      "curr_short": "SIT"
+    },
+    {
+      "curr_full": "Solomon Islands Dollar",
+      "curr_short": "SBD"
+    },
+    {
+      "curr_full": "Somali Shilling",
+      "curr_short": "SOS"
+    },
+    {
+      "curr_full": "South Africa Rand",
+      "curr_short": "ZAR"
+    },
+    {
+      "curr_full": "South Korea Won",
+      "curr_short": "KRW"
+    },
+    {
+      "curr_full": "Spain Peseta",
+      "curr_short": "ESP"
+    },
+    {
+      "curr_full": "Sri Lanka Rupee",
+      "curr_short": "LKR"
+    },
+    {
+      "curr_full": "St Helena Pound",
+      "curr_short": "SHP"
+    },
+    {
+      "curr_full": "Sudan Pound",
+      "curr_short": "SDG"
+    },
+    {
+      "curr_full": "Suriname Dollar",
+      "curr_short": "SRD"
+    },
+    {
+      "curr_full": "Swaziland Lilangeni",
+      "curr_short": "SZL"
+    },
+    {
+      "curr_full": "Sweden Krona",
+      "curr_short": "SEK"
+    },
+    {
+      "curr_full": "Switzerland Franc",
+      "curr_short": "CHF"
+    },
+    {
+      "curr_full": "Syria Pound",
+      "curr_short": "SYP"
+    },
+    {
+      "curr_full": "Taiwan Dollar",
+      "curr_short": "TWD"
+    },
+    {
+      "curr_full": "Tanzania Shilling",
+      "curr_short": "TZS"
+    },
+    {
+      "curr_full": "Thailand Baht",
+      "curr_short": "THB"
+    },
+    {
+      "curr_full": "Tonga Pa'anga",
+      "curr_short": "TOP"
+    },
+    {
+      "curr_full": "Trinidad/Tobago Dollar",
+      "curr_short": "TTD"
+    },
+    {
+      "curr_full": "Tunisia Dinar",
+      "curr_short": "TND"
+    },
+    {
+      "curr_full": "Turkish New Lira",
+      "curr_short": "TRY"
+    },
+    {
+      "curr_full": "Turkmenistan Manat",
+      "curr_short": "TMM"
+    },
+    {
+      "curr_full": "USA Dollar",
+      "curr_short": "USD"
+    },
+    {
+      "curr_full": "Uganda Shilling",
+      "curr_short": "UGX"
+    },
+    {
+      "curr_full": "Ukraine Hryvnia",
+      "curr_short": "UAH"
+    },
+    {
+      "curr_full": "Uruguay Peso",
+      "curr_short": "UYU"
+    },
+    {
+      "curr_full": "United Arab Emirates Dirham",
+      "curr_short": "AED"
+    },
+    {
+      "curr_full": "Vanuatu Vatu",
+      "curr_short": "VUV"
+    },
+    {
+      "curr_full": "Venezuela Bolivar",
+      "curr_short": "VEB"
+    },
+    {
+      "curr_full": "Vietnam Dong",
+      "curr_short": "VND"
+    },
+    {
+      "curr_full": "Yemen Rial",
+      "curr_short": "YER"
+    },
+    {
+      "curr_full": "Zambia Kwacha",
+      "curr_short": "ZMK"
+    },
+    {
+      "curr_full": "Zimbabwe Dollar",
+      "curr_short": "ZWD"
+    }
+]
