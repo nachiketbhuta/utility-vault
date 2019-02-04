@@ -2,9 +2,35 @@ $(document).ready(function () {
 
     $('#particles-js').height($('.sub-wrapper').height() + 120);
     $('.main-wrapper').height($('#particles-js').height() + 20);
-    $(window).resize(function(){
+
+    new WOW().init();
+
+    $(window).resize(function () {
         $('#particles-js').height($('.sub-wrapper').height() + 120);
         $('.main-wrapper').height($('#particles-js').height());
+    });
+
+    $('#navbarItemList').onePageNav({
+        currentClass: 'active',
+        changeHash: false,
+        scrollSpeed: 1200,
+        scrollOffset: 100
+    });
+
+    tomtom.setProductInfo('wp-project', '4.46.3');
+    var map = tomtom.L.map('map', {
+        key: "kbOJaA2N51OjpsbfveH1hGxYUkGZQJ2A",
+        basePath: "{{ asset('js/plugins/maps') }}",
+        center: [19.0730847, 72.8976334],
+        zoom: 17
+    });
+    var marker = tomtom.L.marker([19.0730847, 72.8976334]).addTo(map);
+
+    $('#zoomBtn').click(function () {
+        $('.zoom-btn-sm').toggleClass('scale-out');
+        if (!$('.zoom-card').hasClass('scale-out')) {
+            $('.zoom-card').toggleClass('scale-out');
+        }
     });
 
     $(".navbar li").on("click", function () {
@@ -14,10 +40,9 @@ $(document).ready(function () {
 
     $('.navbar-toggler-button').click(function () {
         $('.animated-icon').toggleClass('open');
-        if($('#collapsibleNavId').is(":visible")){
+        if ($('#collapsibleNavId').is(":visible")) {
             $('.navbar').css("background-color", "transparent");
-        }else{
-
+        } else {
             $('.navbar').css("background-color", "rgba(255,255,255,0.6)");
         }
     });
@@ -29,6 +54,12 @@ $(document).ready(function () {
         } else {
             $(".navbar-default").removeClass('animated');
             $('#logo').attr('src', "assets/img/logo/logo-2.png");
+        }
+
+        if($(window).scrollTop() > 160){
+            $(".zoom").fadeIn(1500);
+        }else{
+            $(".zoom").fadeOut(1000);
         }
     });
 

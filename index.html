@@ -13,6 +13,8 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/plugins/font-awesome/all.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/wow/animate.css" />
+    <link rel="stylesheet" href="assets/maps/maps.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <title>Utility Vault | Home</title>
@@ -50,6 +52,7 @@
                         <li class="nav-item"><a class="nav-link" href="#dictionaryArea">Dictionary</a></li>
                         <li class="nav-item"><a class="nav-link" href="#weatherArea">Weather</a></li>
                         <li class="nav-item"><a class="nav-link" href="#imagesArea">Images</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -58,7 +61,7 @@
             <section class="home-area wave-variant" id="home-area">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center justify-content-center">
-                        <div class="col-12 col-lg-11 home-content text-center">
+                        <div class="col-12 col-lg-11 home-content text-center wow slideInDown">
                             <h5 class="greet">Welcome to <b>Utility Vault</b></h5>
                             <h1 class="skills cd-headline clip">In search of
                                 <span class="cd-words-wrapper single-skill">
@@ -74,22 +77,18 @@
                                     where you can find all the services you need to complete your work and more....</p>
                                 <a class="btn work button-main" data-scroll href="#services-area" role="button">Get
                                     Started</a>
-                                <a class="btn hire button-main button-scheme" data-scroll href="#contact-area" role="button">Contact
+                                <a class="btn hire button-main button-scheme" data-scroll href="#contact" role="button">Contact
                                     Us</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- <svg class="section-shape" viewBox="0 23 500 32" preserveAspectRatio="none">
-                    <path d="M-237.97,103.13 C201.53,-102.13 318.14,183.05 741.62,-36.02 L655.95,547.25 L-381.89,482.11 Z"
-                        stroke="none" fill="#fff"></path>
-                </svg> -->
             </section>
         </div>
 
     </div>
 
-    <section id="services-area" style="min-height: 300px;">
+    <section id="services-area">
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
                 <div class="abt-title text-center">
@@ -102,54 +101,119 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-10">
-                <div class="row">
-                    <div class="" id="converterArea">
-                        <div class="col-md-5">
-
+            <div class="col-12 col-md-8 offset-md-2">
+                <div class="content-area" id="converterArea">
+                    <div class="row">
+                        <div class="col-sm-4 align-self-center text-center wow slideInLeft">
+                            <img src="design/icons/currency.png" class="img-fluid"></img>
                         </div>
-                        <div class="col-md-7">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="content-area" id="newsArea">
-                        <div class="col-md-5">
-
-                        </div>
-                        <div class="col-md-7">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="content-area" id="dictionaryArea">
-                        <div class="col-md-5">
-
-                        </div>
-                        <div class="col-md-7">
-
+                        <div class="col-sm-8 utility-container wow slideInRight">
+                            <div class="utility-header">
+                                Currency Converter
+                            </div>
+                            <div class="utility-description">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat ex necessitatibus
+                                ducimus modi
+                                perspiciatis porro id suscipit reprehenderit, dolor excepturi doloremque architecto
+                                eligendi,
+                                culpa voluptas quo distinctio animi sit. Tenetur?
+                            </div>
+                            <div class="utility-more">
+                                <button onclick="location.href='pages/converter.html'" class="expl-btn hvr-sweep-to-right">Explore
+                                    more&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="content-area" id="weatherArea">
-                        <div class="col-md-5">
-
+                <div class="content-area inverse-area" id="newsArea">
+                    <div class="row xs-column-reverse">
+                        <div class="col-sm-8 utility-container wow slideInLeft">
+                            <div class="utility-header">
+                                News
+                            </div>
+                            <div class="utility-description">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat ex necessitatibus
+                                ducimus modi
+                                perspiciatis porro id suscipit reprehenderit, dolor excepturi doloremque architecto
+                                eligendi,
+                                culpa voluptas quo distinctio animi sit. Tenetur?
+                            </div>
+                            <div class="utility-more">
+                                <button onclick="location.href='pages/news.html'" class="expl-btn hvr-sweep-to-right">Explore
+                                    more&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></button>
+                            </div>
                         </div>
-                        <div class="col-md-7">
-
+                        <div class="col-sm-4 align-self-center text-center wow slideInRight">
+                            <img src="design/icons/news.png" class="img-fluid rounded"></img>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="content-area" id="imagesArea">
-                        <div class="col-md-5">
-
+                <div class="content-area" id="dictionaryArea">
+                    <div class="row">
+                        <div class="col-sm-4 align-self-center text-center wow slideInLeft">
+                            <img src="design/icons/dictionary.png" class="img-fluid"></img>
                         </div>
-                        <div class="col-md-7">
-
+                        <div class="col-sm-8 utility-container wow slideInRight">
+                            <div class="utility-header">
+                                Dictionary
+                            </div>
+                            <div class="utility-description">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat ex necessitatibus
+                                ducimus modi
+                                perspiciatis porro id suscipit reprehenderit, dolor excepturi doloremque architecto
+                                eligendi,
+                                culpa voluptas quo distinctio animi sit. Tenetur?
+                            </div>
+                            <div class="utility-more">
+                                <button onclick="location.href='pages/dictionary.html'" class="expl-btn hvr-sweep-to-right">Explore
+                                    more&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-area inverse-area" id="weatherArea">
+                    <div class="row xs-column-reverse">
+                        <div class="col-sm-8 utility-container wow slideInLeft">
+                            <div class="utility-header">
+                                Weather Forecast
+                            </div>
+                            <div class="utility-description">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat ex necessitatibus
+                                ducimus modi
+                                perspiciatis porro id suscipit reprehenderit, dolor excepturi doloremque architecto
+                                eligendi,
+                                culpa voluptas quo distinctio animi sit. Tenetur?
+                            </div>
+                            <div class="utility-more">
+                                <button onclick="location.href='pages/weather.html'" class="expl-btn hvr-sweep-to-right">Explore
+                                    more&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 align-self-center text-center wow slideInRight">
+                            <img src="design/icons/forecast.png" class="img-fluid"></img>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-area" id="imagesArea">
+                    <div class="row">
+                        <div class="col-sm-4 align-self-center text-center wow slideInLeft">
+                            <img src="design/icons/gallery.png" class="img-fluid"></img>
+                        </div>
+                        <div class="col-sm-8 utility-container wow slideInRight">
+                            <div class="utility-header">
+                                Image Gallery
+                            </div>
+                            <div class="utility-description">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat ex necessitatibus
+                                ducimus modi
+                                perspiciatis porro id suscipit reprehenderit, dolor excepturi doloremque architecto
+                                eligendi,
+                                culpa voluptas quo distinctio animi sit. Tenetur?
+                            </div>
+                            <div class="utility-more">
+                                <button onclick="location.href='pages/weather.html'" class="expl-btn hvr-sweep-to-right">Explore
+                                    more&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -157,11 +221,64 @@
         </div>
     </section>
 
-    <footer>
+    <section id="contact">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="abt-title text-center">
+                    <h2 class="abt-title-text">
+                        <span>Contact us</span>
+                    </h2>
+                    <p>Have a query? Contact us at below details</p>
+                    <div class="dash"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div id="map" class="wow slideInLeft">
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="contact-us-form text-center wow slideInRight">
+                            <h2>Contact Form</h2>
+                            <form id="contact_form" action="" method="post" role="form">
+                                <div class="form-group">
+                                    <input type="email" class="form-control ct-form-email" name="enquiryEmail"
+                                        placeholder="Your Email" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control ct-form-msg" name="enquiryTitle" placeholder="Whats's this about" />
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control ct-form-text" rows="6" name="enquiryMessage"
+                                        placeholder="Your Message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-default ct-form-btn">Submit Form</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
         <div class="footer-copyright text-center">
             <p class="footer-text ">&copy; 2019 Made with <i class=" love fa fa-heartbeat"></i> for you!</p>
         </div>
     </footer>
+
+    <div class="zoom">
+        <a class="zoom-fab zoom-btn-large" id="zoomBtn"><i class="fa fa-link"></i></a>
+        <ul class="zoom-menu">
+            <li><a class="zoom-fab zoom-btn-sm zoom-btn-fb scale-transition scale-out"><i class="fa fa-facebook-f"></i></a></li>
+            <li><a class="zoom-fab zoom-btn-sm zoom-btn-gp scale-transition scale-out"><i class="fa fa-google-plus"></i></a></li>
+            <li><a class="zoom-fab zoom-btn-sm zoom-btn-tw scale-transition scale-out"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+    </div>
 
     <!-- jQuery -->
     <script src="assets/js/jquery.js"></script>
@@ -170,6 +287,9 @@
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/plugins/particle-js/particles.min.js"></script>
+    <script src="assets/js/plugins/jquery-nav/jquery.nav.js"></script>
+    <script src="assets/js/plugins/wow/wow.min.js"></script>
+    <script src="assets/maps/tomtom.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 
