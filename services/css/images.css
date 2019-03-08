@@ -1,0 +1,22 @@
+.input-container {
+  padding: 25px 0 20px 0;
+}
+
+.img-container {
+  float: left;
+  width: 75%;
+  column-count: 3;
+}
+
+.suggestion-container {
+  width: 25%;
+  float: right;
+}
+
+.image-holder > img {
+  margin-top: 20px;
+}
+
+.row {
+  height: 1000px;
+}
