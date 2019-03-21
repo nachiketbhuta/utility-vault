@@ -44,4 +44,6 @@ input[type=text] {
   background-color: var(--primary-color);
   color: var(--white);
   border-radius: 10px;
+  outline: none;
+  cursor: pointer;
 }
