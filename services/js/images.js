@@ -12,7 +12,17 @@ $(() => {
             url: URL,
             cors: true,
             success: function (data) {
-                console.log(data);
+                let images = data.hits;
+                $('.image-holder').remove();
+                $('.not_found').remove();
+                if (images.length > 0) {
+                    $.each(images, function(index, value) {
+                        $(".img-container").append('<div class="image-holder" id="lightgallery"><img width="300" class="image" height="300" src="'+value['webformatURL']+'"</img></div>');
+                    });
+                }
+                else {
+                    $('.img-container').append('<p class="not_found">There are no images found on this topic.</p>');
+                }
             },
             error: function (error) {
                 console.log(error);

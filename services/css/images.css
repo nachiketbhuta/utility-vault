@@ -1,6 +1,6 @@
 .input-container {
   padding: 25px 0 20px 0;
-  flex: 2;
+  /*flex: 2;*/
 }
 
 .img-container {
@@ -12,8 +12,8 @@
 .suggestion-container {
   width: 25%;
   float: right;
-  flex: 2;
-  padding-left: 1.6rem;
+  /*flex: 2;*/
+  /*padding-left: 1.6rem;*/
 }
 
 .image-holder > img {
@@ -22,8 +22,8 @@
 
 .row {
   height: 1000px;
-  display: flex;
-  justify-content: flex-start;
+  /*display: flex;*/
+  /*justify-content: flex-start;*/
   padding-left: 50px;
 }
 
