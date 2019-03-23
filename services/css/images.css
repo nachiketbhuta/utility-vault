@@ -47,3 +47,11 @@ input[type=text] {
   outline: none;
   cursor: pointer;
 }
+.image {
+  transition: .5s;
+}
+
+.image:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}

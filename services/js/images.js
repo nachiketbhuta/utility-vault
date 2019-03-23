@@ -17,7 +17,7 @@ $(() => {
                 $('.not_found').remove();
                 if (images.length > 0) {
                     $.each(images, function(index, value) {
-                        $(".img-container").append('<div class="image-holder" id="lightgallery"><img width="300" class="image" height="300" src="'+value['webformatURL']+'"</img></div>');
+                        $(".img-container").append('<div class="image-holder"><a href="'+value['webformatURL']+'" data-lightbox="mygallery" data-title="'+value['tags']+'"><img width="300" class="image" height="300" src="'+value['webformatURL']+'"</img></a></div>');
                     });
                 }
                 else {
