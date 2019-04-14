@@ -1,95 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-     <!-- Custom CSS -->
-     <link rel="stylesheet" href="../services/css/converter.css" />
-     <link rel="stylesheet" href="../style.css">
+		<link
+			rel="icon"
+			type="image/png"
+			href="assets/img/logo/favicon-32x32.png"
+			sizes="32x32"
+		/>
 
-     <!-- Bootstrap -->
-     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="../services/css/converter.css" />
+		<link rel="stylesheet" href="../style.css" />
 
-    <title>Utility Vault</title>
-  </head>
-  <body>
-    <!-- Navigation Bar -->
-    <nav class="main-nav" style="border: none;">
-      <ul>
-        <li style="float:left;"><a href="../index.html">Utility Vault</a></li>
-        <li style="text-decoration: underline;"><a href="../pages/converter.html">Converter</a></li>
-        <li><a href="../pages/news.html">News</a></li>
-        <li><a href="../pages/dictionary.html">Dictionary</a></li>
-        <li><a href="../pages/weather.html">Weather</a></li>
-        <li><a href="../pages/images.html">Images</a></li>
-      </ul>
-    </nav>
-    <div class="container">
-        <section id="curreny_convert">
-            <div class="row">
-                <div class="col-sm-8 offset-sm-2">
-                    <div class="curr-conv-conatiner">
-                        <div class="form-row">
-                            <div class="col-sm-6">
-                                <div class="form-group mb-2">
-                                    <label for="from">From</label>
-                                    <select name="from" id="from" class="custom-select">
-                                        <option value="none" disabled selected>--- Select From ---</option>
-                                    </select>
-                                    <small id="from_curr_help" class="form-text" style="display: none;">
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
 
-                                    </small>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group mb-2">
-                                    <label for="from_amt">Amount</label>
-                                    <input type="number" name="from_amt" id="from_amt" class="form-control" min="1">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-sm-6">
-                                <div class="form-group mb-2">
-                                    <label for="to">To</label>
-                                    <select name="to" id="to" class="custom-select">
-                                        <option value="none" disabled selected>--- Select To ---</option>
-                                    </select>
-                                    <small id="to_curr_help" class="form-text" style="display: none;">
+		<title>Utility Vault</title>
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="main-nav" style="border: none;">
+			<ul>
+				<li style="float:left;"><a href="../index.html">Utility Vault</a></li>
+				<li style="text-decoration: underline;">
+					<a href="../pages/converter.html">Converter</a>
+				</li>
+				<li><a href="../pages/news.html">News</a></li>
+				<li><a href="../pages/dictionary.html">Dictionary</a></li>
+				<li><a href="../pages/weather.html">Weather</a></li>
+				<li><a href="../pages/images.html">Images</a></li>
+			</ul>
+		</nav>
+		<div class="container">
+			<section id="curreny_convert">
+				<div class="row">
+					<div class="col-sm-8 offset-sm-2">
+						<div class="curr-conv-conatiner">
+							<div class="form-row">
+								<div class="col-sm-6">
+									<div class="form-group mb-2">
+										<label for="from">From</label>
+										<select name="from" id="from" class="custom-select">
+											<option value="none" disabled selected
+												>--- Select From ---</option
+											>
+										</select>
+										<small
+											id="from_curr_help"
+											class="form-text"
+											style="display: none;"
+										>
+										</small>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group mb-2">
+										<label for="from_amt">Amount</label>
+										<input
+											type="number"
+											name="from_amt"
+											id="from_amt"
+											class="form-control"
+											min="1"
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="col-sm-6">
+									<div class="form-group mb-2">
+										<label for="to">To</label>
+										<select name="to" id="to" class="custom-select">
+											<option value="none" disabled selected
+												>--- Select To ---</option
+											>
+										</select>
+										<small
+											id="to_curr_help"
+											class="form-text"
+											style="display: none;"
+										>
+										</small>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group mb-2">
+										<label for="to_amt">Amount</label>
+										<input
+											type="number"
+											class="form-control-plaintext"
+											name="to_amt"
+											id="to_amt"
+											value="0"
+											readonly
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="row mt-3 justify-content-center">
+								<button
+									id="submit"
+									class="btn btn-primary"
+									style="width: 160px;"
+								>
+									Submit
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
 
-                                    </small>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group mb-2">
-                                    <label for="to_amt">Amount</label>
-                                    <input type="number" class="form-control-plaintext" name="to_amt" id="to_amt" value="0" readonly>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-3 justify-content-center">
-                            <button id="submit" class="btn btn-primary" style="width: 160px;">Submit</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+		<footer><p>Copyright &copy; 2019</p></footer>
 
+		<!-- jQuery -->
+		<script src="../assets/js/jquery.js"></script>
 
-    <footer><p>Copyright &copy; 2019</p></footer>
+		<!-- Bootstrap JS Files-->
+		<!-- <script src="../assets/js/jquery-slim.min.js"></script> -->
+		<script src="../assets/js/popper.min.js"></script>
+		<script src="../assets/js/bootstrap.min.js"></script>
 
-    <!-- jQuery -->
-    <script src="../assets/js/jquery.js"></script>
-
-    <!-- Bootstrap JS Files-->
-    <!-- <script src="../assets/js/jquery-slim.min.js"></script> -->
-    <script src="../assets/js/popper.min.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
-
-    <!-- Custom JS -->
-    <script src="../services/js/currency-converter.js"></script>
-  </body>
+		<!-- Custom JS -->
+		<script src="../services/js/currency-converter.js"></script>
+	</body>
 </html>

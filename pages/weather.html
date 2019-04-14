@@ -1,58 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Utility Vault</title>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Utility Vault</title>
 
-    <link rel="icon" href="../assets/img/logo/favicon.ico" sizes="32x32">
+		<link rel="icon" href="../assets/img/logo/favicon.ico" sizes="32x32" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../services/css/weather.css" />
-    <link rel="stylesheet" href="../style.css" />
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="../services/css/weather.css" />
+		<link rel="stylesheet" href="../style.css" />
 
-    <!-- Bootstrap -->
-    <!-- <link rel="stylesheet" href="../assets/css/bootstrap.min.css" /> -->
+		<!-- Bootstrap -->
+		<!-- <link rel="stylesheet" href="../assets/css/bootstrap.min.css" /> -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	</head>
+	<body>
+		<!-- Header-->
+		<!-- Navigation Bar -->
+		<nav class="main-nav" style="border: none;">
+			<ul>
+				<li style="float:left;"><a href="../index.html">Utility Vault</a></li>
+				<li style="text-decoration: underline;">
+					<a href="../pages/converter.html">Converter</a>
+				</li>
+				<li><a href="../pages/news.html">News</a></li>
+				<li><a href="../pages/dictionary.html">Dictionary</a></li>
+				<li><a href="../pages/weather.html">Weather</a></li>
+				<li><a href="../pages/images.html">Images</a></li>
+			</ul>
+		</nav>
 
-  </head>
-  <body>
-    <!-- Header-->
-    <!-- Navigation Bar -->
-    <nav class="main-nav" style="border: none;">
-      <ul>
-        <li style="float:left;"><a href="../index.html">Utility Vault</a></li>
-        <li style="text-decoration: underline;">
-          <a href="../pages/converter.html">Converter</a>
-        </li>
-        <li><a href="../pages/news.html">News</a></li>
-        <li><a href="../pages/dictionary.html">Dictionary</a></li>
-        <li><a href="../pages/weather.html">Weather</a></li>
-        <li><a href="../pages/images.html">Images</a></li>
-      </ul>
-    </nav>
+		<div class="input-container">
+			<center>
+				<input class="search" type="text" placeholder="Enter topic" />
+				<button type="submit" class="submit">Search</button>
+			</center>
+		</div>
 
-    <div class="input-container">
-      <center>
-        <input class="search" type="text" placeholder="Enter topic" />
-        <button type="submit" class="submit">Search</button>
-      </center>
-    </div>
+		<div class="row">
+			<p class="temperature"></p>
+			<p class="time"></p>
+			<p class="summary"></p>
+		</div>
 
-    <div class="row">
-      <p class="temperature"></p>
-      <p class="time"></p>
-      <p class="summary"></p>
-    </div>
+		<!-- jQuery -->
+		<script src="../assets/js/jquery.js"></script>
 
-    <!-- jQuery -->
-    <script src="../assets/js/jquery.js"></script>
+		<!-- Bootstrap JS Files-->
+		<script src="../assets/js/popper.min.js"></script>
+		<script src="../assets/js/bootstrap.min.js"></script>
 
-    <!-- Bootstrap JS Files-->
-    <script src="../assets/js/popper.min.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
-
-    <!-- Custom JS -->
-    <script src="../services/js/weather.js"></script>
-  </body>
+		<!-- Custom JS -->
+		<script src="../services/js/weather.js"></script>
+	</body>
 </html>
