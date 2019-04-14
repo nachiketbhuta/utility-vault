@@ -1,33 +1,33 @@
-const slides = document.querySelectorAll(".slide");
-const next = document.querySelector("#next");
-const prev = document.querySelector("#prev");
+const slides = $(".slide");
+const next = $("#next");
+const prev = $("#prev");
 const auto = false; // Auto scroll
 const intervalTime = 5000;
 let slideInterval;
 
 const nextSlide = function() {
-	const current = document.querySelector(".current");
-	current.classList.remove("current");
-	if (current.nextElementSibling) {
-		current.nextElementSibling.classList.add("current");
+	const current = $(".current");
+	current.removeClass("current");
+	if (current[0].nextElementSibling) {
+		$(current[0].nextElementSibling).addClass("current");
 	} else {
-		slides[0].classList.add("current");
+		$(slides[0]).addClass("current");
 	}
-	setTimeout(() => current.classList.remove("current"));
+	setTimeout(() => current.removeClass("current"));
 };
 
 const prevSlide = () => {
-	const current = document.querySelector(".current");
-	current.classList.remove("current");
-	if (current.previousElementSibling) {
-		current.previousElementSibling.classList.add("current");
+	const current = $(".current");
+	current.removeClass("current");
+	if (current[0].previousElementSibling) {
+		$(current[0].previousElementSibling).addClass("current");
 	} else {
-		slides[slides.length - 1].classList.add("current");
+		$(slides[slides.length - 1]).addClass("current");
 	}
-	setTimeout(() => current.classList.remove("current"));
+	setTimeout(() => current.removeClass("current"));
 };
 
-next.addEventListener("click", e => {
+next.click(function(e){
 	nextSlide();
 	if (auto) {
 		clearInterval(slideInterval);
@@ -35,7 +35,7 @@ next.addEventListener("click", e => {
 	}
 });
 
-prev.addEventListener("click", e => {
+prev.click(function(e) {
 	prevSlide();
 	if (auto) {
 		clearInterval(slideInterval);
