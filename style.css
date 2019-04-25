@@ -411,6 +411,10 @@ textarea {
 	text-align: center;
 }
 
+audio:not([controls]) {
+    display: none !important;
+}
+
 /* Footer */
 footer {
 	margin-top: 20px;

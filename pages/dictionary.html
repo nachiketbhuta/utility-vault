@@ -1,134 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<title>Utility Vault</title>
 
-		<link
-			rel="icon"
-			type="image/png"
-			href="assets/img/logo/favicon-32x32.png"
-			sizes="32x32"
-		/>
+<head>
+	<meta charset="UTF-8" />
+	<title>Utility Vault</title>
 
-		<!-- Custom CSS -->
-		<link rel="stylesheet" href="../services/css/dictionary.css" />
-		<link rel="stylesheet" href="../style.css" />
+	<link rel="icon" type="image/png" href="assets/img/logo/favicon-32x32.png" sizes="32x32" />
 
-		<!-- Bootstrap -->
-		<link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="../services/css/dictionary.css" />
+	<link rel="stylesheet" href="../style.css" />
 
-		<style>
-			@import url('https://fonts.googleapis.com/css?family=Roboto');
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
 
-			.word-container{
-				font-family: 'Roboto';
-				display: none;
-				width:60%;
-				background: #fff;
-				opacity: 0.6;
-				position: absolute;
-				border-radius: 10px;
-				top:250px;
-				color: #000;
-				padding: 15px 20px;
-				box-shadow: 0 14px 30px rgba(0,0,0,0.25), 0 10px 30px rgba(0,0,0,0.22);
-				transition: all 0.4s;
+	<link rel="stylesheet" href="../assets/css/plugins/busyload/busyload.min.css" />
+
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+		.word-container {
+			font-family: 'Roboto';
+			display: none;
+			width: 100%;
+			background: #fff;
+			opacity: 0.6;
+			/* position: absolute; */
+			border-radius: 10px;
+			/* top:250px; */
+			color: #000;
+			padding: 15px 20px;
+			box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25), 0 10px 30px rgba(0, 0, 0, 0.22);
+			transition: all 0.4s;
+		}
+
+		.form-control {
+			margin: 0;
+		}
+
+		.grammar-info {}
+
+		.word-searched {
+			display: inline-block;
+			font-weight: 500;
+		}
+
+		.phonetic {
+			margin-left: 10px;
+			font-size: 13px;
+		}
+
+		[class^="definition-list"] {
+			margin-left: 30px;
+			margin-top: 10px;
+			list-style-type: decimal;
+		}
+
+		[class^="example-list"] {
+			margin-left: 30px;
+			margin-bottom: 5px;
+			list-style-type: disc;
+		}
+
+		@-webkit-keyframes spin {
+			to {
+				-webkit-transform: rotate(360deg);
+				transform: rotate(360deg);
 			}
+		}
 
-			.grammar-info{
-				
+		@keyframes spin {
+			to {
+				-webkit-transform: rotate(360deg);
+				transform: rotate(360deg);
 			}
+		}
 
-			.word-searched{
-				display: inline-block;
-				font-weight: 500;
-			}
+		.stroke-dotted {
+			opacity: 0;
+			stroke-dasharray: 4, 5;
+			stroke-width: 1px;
+			-webkit-transform-origin: 50% 50%;
+			transform-origin: 50% 50%;
+			-webkit-animation: spin 4s infinite linear;
+			animation: spin 4s infinite linear;
+			transition: opacity 1s ease, stroke-width 1s ease;
+		}
 
-			.pronounciation{
-				margin-left: 10px;
-				font-size: 13px;
-			}
+		.stroke-solid {
+			stroke-dashoffset: 0;
+			stroke-dashArray: 300;
+			stroke-width: 4px;
+			transition: stroke-dashoffset 1s ease, opacity 1s ease;
+		}
 
-			.definition-list{
-				margin-left: 30px;
-				margin-top: 10px;
-				list-style-type: disc;
-			}
+		.icon {
+			-webkit-transform-origin: 50% 50%;
+			transform-origin: 50% 50%;
+			transition: -webkit-transform 200ms ease-out;
+			transition: transform 200ms ease-out;
+			transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
+		}
 
-			.example-list{
-				margin-left: 30px;
-				margin-top: 10px;
-				list-style-type: disc;
-			}
-		</style>
-	</head>
-	<body>
-		<!-- Header-->
-		<!-- Navigation Bar -->
-		<nav class="main-nav" style="border: none;">
-			<ul>
-				<li style="float:left;"><a href="../index.html">Utility Vault</a></li>
-				<li style="text-decoration: underline;">
-					<a href="../pages/converter.html">Converter</a>
-				</li>
-				<li><a href="../pages/news.html">News</a></li>
-				<li><a href="../pages/dictionary.html">Dictionary</a></li>
-				<li><a href="../pages/weather.html">Weather</a></li>
-				<li><a href="../pages/images.html">Images</a></li>
-			</ul>
-		</nav>
+		#play:hover .stroke-dotted {
+			stroke-width: 4px;
+			opacity: 1;
+		}
 
-		<div class="container">
-			<div class="form-group">
-				<label for="email">Enter text</label>
-				<br />
-				<input
-					type="text"
-					class="form-control"
-					id="search"
-					placeholder="Enter word...."
-					name="search"
-				/>
+		#play:hover .stroke-solid {
+			opacity: 0;
+			stroke-dashoffset: 300;
+		}
+
+		#play:hover .icon {
+			-webkit-transform: scale(1.05);
+			transform: scale(1.05);
+		}
+
+		.play-btn {
+			cursor: pointer;
+			position: absolute;
+			right: 30px;
+			top: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Header-->
+	<!-- Navigation Bar -->
+	<nav class="main-nav" style="border: none;">
+		<ul>
+			<li style="float:left;"><a href="../index.html">Utility Vault</a></li>
+			<li style="text-decoration: underline;">
+				<a href="../pages/converter.html">Converter</a>
+			</li>
+			<li><a href="../pages/news.html">News</a></li>
+			<li><a href="../pages/dictionary.html">Dictionary</a></li>
+			<li><a href="../pages/weather.html">Weather</a></li>
+			<li><a href="../pages/images.html">Images</a></li>
+		</ul>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<form role="form">
+					<div class="form-group">
+						<label for="email">Enter text</label>
+						<br />
+						<input type="text" class="form-control" id="search" placeholder="Enter word...."
+							name="search" />
+					</div>
+					<div>
+						<button type="button" class="btn btn-primary" id="submit">Submit</button>
+					</div>
+				</form>
 			</div>
-			<button type="submit" class="btn btn-primary" id="submit">Submit</button>
+		</div>
 
-			<div class="dictionary-container">
-				<div class="word-container">
-					<h3 class="word-searched"></h3><small class="pronounciation">&nbsp;</small>
 
-					<div class="word-info">
-						<p class="grammar-info"><i></i></p>
-						<div class="definitions">
-							Definitions
-							<ul class="definition-list">
-								<!-- <li>A qualified practitioner of medicine; a physician</li> -->
-								<!-- <li>A person who holds a doctorate.</li> -->
-							</ul>
-						</div>
-						<div class="examples">
-							Exmaples
-							<ul class="example-list">
-								<!-- <li>he was made a Doctor of Divinity</li> -->
-								<!-- <li></li> -->
-							</ul>
+		<div class="row mt-5">
+			<div class="col-md-6 offset-md-3">
+				<div class="dictionary-container">
+					<div class="word-container">
+						<h3 class="word-searched"></h3><small class="phonetic">&nbsp;</small>
+						<audio id="pronunciation">
+							<!-- <source src="horse.ogg" type="audio/mp3"> -->
+							Your browser does not support the audio element.
+						</audio>
+						<!-- <button class="play-btn" type="button">play</button> -->
+						<svg version="1.1" id="play" class="play-btn" xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="40px" width="40px"
+							viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+							<path class="stroke-solid" fill="none" stroke="black" d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
+    C97.3,23.7,75.7,2.3,49.9,2.5" />
+							<path class="stroke-dotted" fill="none" stroke="black" d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
+    C97.3,23.7,75.7,2.3,49.9,2.5" />
+							<path class="icon" fill="black"
+								d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z" />
+						</svg>
+
+						<div class="word-info">
+							<div class="definitions">
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<!-- Footer -->
-		<footer><p>Copyright &copy; 2019</p></footer>
 
-		<!-- jQuery -->
-		<script src="../assets/js/jquery.js"></script>
 
-		<!-- Bootstrap JS Files-->
-		<script src="../assets/js/popper.min.js"></script>
-		<script src="../assets/js/bootstrap.min.js"></script>
+	</div>
 
-		<!-- Custom JS -->
-		<script src="../services/js/dictionary.js"></script>
-	</body>
+	<!-- Footer -->
+	<footer>
+		<p>Copyright &copy; 2019</p>
+	</footer>
+
+	<!-- jQuery -->
+	<script src="../assets/js/jquery.js"></script>
+
+	<!-- Bootstrap JS Files-->
+	<script src="../assets/js/popper.min.js"></script>
+	<script src="../assets/js/bootstrap.min.js"></script>
+
+	<script src="../assets/js/plugins/busyload/busyload.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="../services/js/dictionary.js"></script>
+</body>
+
 </html>
