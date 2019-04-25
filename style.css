@@ -61,23 +61,6 @@ ol {
 	text-decoration: none;
 }
 
-/* Footer */
-footer {
-	bottom: 0;
-	position: fixed;
-	width: 100%;
-	background: var(--primary-color);
-}
-
-/* Footer text */
-footer p {
-	font-size: 14px;
-	text-align: center;
-	padding-top: 10px;
-	color: #fff;
-	text-transform: uppercase;
-}
-
 /* Image Slider Styles */
 .image-container {
 	width: 100%;
@@ -413,14 +396,4 @@ textarea {
 
 audio:not([controls]) {
     display: none !important;
-}
-
-/* Footer */
-footer {
-	margin-top: 20px;
-	position: relative !important;
-}
-
-footer>div {
-	padding: 0.5px !important;
 }
