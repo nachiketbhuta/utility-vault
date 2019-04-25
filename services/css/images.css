@@ -60,3 +60,36 @@ html{
   overflow-y: scroll;
 }
 
+.form-control {
+  margin: 0;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 33.2%;
+}
+
+.grid-item {
+  float: left;
+  /* margin-bottom: 10px; */
+}
+
+/* images cover up the gap */
+.grid-item a img {
+  display: block;
+  width: 100.5%;
+}
+
+.popular-tags>li {
+  cursor: pointer;
+  margin-bottom: 6px;
+  transition: all 0.4s;
+}
+
+.popular-tags>li:hover {
+  font-size: 16px;
+}
+
+.toast-error {
+  background-color: #BD362F !important;
+}

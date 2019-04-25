@@ -13,6 +13,7 @@
 		/>
 
 		<!-- Custom CSS -->
+		<link rel="stylesheet" href="./../assets/css/style.css">
 		<link rel="stylesheet" href="../style.css" />
 		<link rel="stylesheet" href="../services/css/converter.css" />
 
@@ -21,22 +22,43 @@
 		<link rel="stylesheet" href="../assets/css/plugins/busyload/busyload.min.css" />
 
 		<title>Utility Vault</title>
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		
 	</head>
 	<body>
-		<!-- Navigation Bar -->
-		<nav class="main-nav" style="border: none;">
-			<ul>
-				<li style="float:left;"><a href="../index.html">Utility Vault</a></li>
-				<li style="text-decoration: underline;">
-					<a href="../pages/converter.html">Converter</a>
-				</li>
-				<li><a href="../pages/news.html">News</a></li>
-				<li><a href="../pages/dictionary.html">Dictionary</a></li>
-				<li><a href="../pages/weather.html">Weather</a></li>
-				<li><a href="../pages/images.html">Images</a></li>
-			</ul>
-		</nav>
-		<div class="container">
+
+			<header>
+					<nav class="navbar navbar-default animated navbar-expand-lg navbar-light fixed-top">
+						<a class="navbar-brand" href="#">
+							<img id="logo" src="../assets/img/logo/logo-3.png" alt="" height="50" width="50"></img>
+							<span>utility<em>vault</em></span>
+						</a>
+						<button class="navbar-toggler d-lg-none navbar-toggler-button" type="button" data-toggle="collapse"
+							data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<div class="animated-icon">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</button>
+						<div class="collapse navbar-collapse" id="collapsibleNavId">
+							<ul id="navbarItemList" class="navbar-nav ml-auto mt-2 mt-lg-0">
+								<li class="nav-item"><a class="nav-link" href="../index.html">Home<span
+											class="sr-only">(current)</span></a></li>
+								<li class="nav-item active"><a class="nav-link" href="converter.html">Converter</a></li>
+								<li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+								<li class="nav-item"><a class="nav-link" href="dictionary.html">Dictionary</a></li>
+								<li class="nav-item"><a class="nav-link" href="weather.html">Weather</a></li>
+								<li class="nav-item"><a class="nav-link" href="#">Images</a></li>
+							</ul>
+						</div>
+					</nav>
+				</header>
+
+		<div class="container-fluid">
 			<section id="curreny_convert">
 				<div class="row">
 					<div class="col-sm-8 offset-sm-2">
@@ -116,6 +138,12 @@
 				</div>
 			</section>
 		</div>
+
+		<footer class="footer">
+				<div class="footer-copyright text-center">
+					<p class="footer-text ">&copy; 2019 Made with <i class=" love fa fa-heartbeat"></i> for you!</p>
+				</div>
+			</footer>
 
 		<!-- jQuery -->
 		<script src="../assets/js/jquery.js"></script>

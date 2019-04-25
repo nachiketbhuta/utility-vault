@@ -7,43 +7,95 @@
 		<link rel="icon" href="../assets/img/logo/favicon.ico" sizes="32x32" />
 
 		<!-- Custom CSS -->
+		<link rel="stylesheet" href="./../assets/css/style.css">
 		<link rel="stylesheet" href="../services/css/weather.css" />
 		<link rel="stylesheet" href="../style.css" />
 
 		<!-- Bootstrap -->
-		<!-- <link rel="stylesheet" href="../assets/css/bootstrap.min.css" /> -->
+		<link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.2/css/weather-icons.min.css">
+		<style>
+			.btn-outline-primary:hover {
+			background-color: #28A745;
+			color: white;
+		}
+		</style>
 	</head>
 	<body>
-		<!-- Header-->
-		<!-- Navigation Bar -->
-		<nav class="main-nav" style="border: none;">
-			<ul>
-				<li style="float:left;"><a href="../index.html">Utility Vault</a></li>
-				<li style="text-decoration: underline;">
-					<a href="../pages/converter.html">Converter</a>
-				</li>
-				<li><a href="../pages/news.html">News</a></li>
-				<li><a href="../pages/dictionary.html">Dictionary</a></li>
-				<li><a href="../pages/weather.html">Weather</a></li>
-				<li><a href="../pages/images.html">Images</a></li>
-			</ul>
-		</nav>
+			<header>
+					<nav class="navbar navbar-default animated navbar-expand-lg navbar-light fixed-top">
+						<a class="navbar-brand" href="#">
+							<img id="logo" src="../assets/img/logo/logo-3.png" alt="" height="50" width="50"></img>
+							<span>utility<em>vault</em></span>
+						</a>
+						<button class="navbar-toggler d-lg-none navbar-toggler-button" type="button" data-toggle="collapse"
+							data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<div class="animated-icon">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</button>
+						<div class="collapse navbar-collapse" id="collapsibleNavId">
+							<ul id="navbarItemList" class="navbar-nav ml-auto mt-2 mt-lg-0">
+								<li class="nav-item"><a class="nav-link" href="../index.html">Home<span
+											class="sr-only">(current)</span></a></li>
+								<li class="nav-item"><a class="nav-link" href="converter.html">Converter</a></li>
+								<li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+								<li class="nav-item"><a class="nav-link" href="dictionary.html">Dictionary</a></li>
+								<li class="nav-item active"><a class="nav-link" href="weather.html">Weather</a></li>
+								<li class="nav-item"><a class="nav-link" href="images.html">Images</a></li>
+							</ul>
+						</div>
+					</nav>
+				</header>
 
-		<div class="input-container">
-			<center>
-				<input class="search" type="text" placeholder="Enter topic" />
-				<button type="submit" class="submit">Search</button>
-			</center>
+		<div class="container-fluid">
+
+			<div class="row">
+					<div class="col-md-6 offset-md-3">
+						<div class="input-group mb-3 w-75 mx-auto">
+								<input type="text" class="form-control search" id="search" placeholder="Enter city name...." name="search" aria-label="Topic" aria-describedby="basic-addon2">
+								<div class="input-group-append">
+									<button class="btn btn-outline-primary submit" id="submit" type="button">Search</button>
+								</div>
+							</div>
+					</div>
+				</div>
+		
+	
+			<div class="row">
+				<div id="weather_wrapper">
+					<div class="weatherCard">
+						<div class="currentTemp">
+							<span class="temp">23&deg;</span>
+							<span class="location">Brussels</span>
+						</div>
+						<div class="currentWeather">
+							<span class="conditions">&#xf00d;</span>
+							<div class="info">
+								<span class="rain">1.1MM</span>
+								<span class="wind">10KMPh</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
-		<div class="row">
-			<p class="temperature"></p>
-			<p class="time"></p>
-			<p class="summary"></p>
-		</div>
-
+		<!-- Footer -->
+	<footer class="footer">
+			<div class="footer-copyright text-center">
+				<p class="footer-text ">&copy; 2019 Made with <i class=" love fa fa-heartbeat"></i> for you!</p>
+			</div>
+		</footer>
+		
 		<!-- jQuery -->
 		<script src="../assets/js/jquery.js"></script>
 
