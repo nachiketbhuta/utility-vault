@@ -1,5 +1,5 @@
 /*
-    http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=c3584b224afd6dcc0b75b8e0d69f4a93
+    http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=c3584b224afd6dcc0b75b8e0d69f4a93&units=metric
 */
 
 $(() => {
@@ -14,10 +14,8 @@ $(() => {
 			dataType: "jsonp",
 			success: function(data) {
 				console.log(data);
-
-				// $(".time").text(moment(data.currently.time).format("MMM Do YY"));
-				// $(".summary").text(data.daily.summary);
-				// $(".temperature").text(toCelsius(data.currently.temperature));
+				$(".summary").text(data.weather[0].main);
+				$(".temperature").text(data.main.temp);
 			},
 			error: function(error) {
 				console.log(error);
