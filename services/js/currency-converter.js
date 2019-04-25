@@ -56,7 +56,7 @@ $(() => {
 
     $("#submit").click(function (e) {
         e.preventDefault();
-
+        $.busyLoadFull('show');
         var from_type = $("#from")
                         .val()
                         .toUpperCase();
@@ -74,9 +74,11 @@ $(() => {
                 if (data.result == "success") {
                     $("#to_amt").val(data.rates[to_type] * from_amt);
                 }
+                $.busyLoadFull('hide');
             },
             error: function (error) {
                 console.log(error);
+                $.busyLoadFull('hide');
             }
         });
     });
