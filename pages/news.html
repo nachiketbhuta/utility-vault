@@ -16,7 +16,9 @@
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="../services/css/news.css" />
 		<link rel="stylesheet" href="../style.css" />
-		
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
 	</head>
 	<body>
 		<!-- Header-->
@@ -35,15 +37,17 @@
 		</nav>
 
 		<div class="input-container">
-			<center>
-				<input class="search" type="text" placeholder="Enter topic" />
-				<button type="submit" class="submit">Search</button>
-			</center>
+					<div class="input-group mb-3 w-50 mx-auto">
+						<input type="text" class="form-control search" placeholder="Enter Topic" aria-label="Topic" aria-describedby="basic-addon2">
+						<div class="input-group-append">
+							<button class="btn btn-outline-secondary submit" type="button" style="background-color: var(--primary-color); color: white;">Search</button>
+						</div>
+					</div>
 		</div>
 
-		<div class="row">
+		<section class="news-list">
 			<div class="news-container"></div>
-		</div>
+		</section>
 
 		<!-- jQuery -->
 		<script src="../assets/js/jquery.js"></script>

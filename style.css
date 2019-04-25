@@ -173,8 +173,8 @@ footer p {
 /* About Section */
 .about-container {
 	display: flex;
-	justify-content: space-around;
-	text-align: center;
+	justify-content: space-evenly;
+	/* text-align: justify;	 */
 	align-content: center;
 	align-items: center;
 	flex-direction: column;
@@ -304,18 +304,25 @@ textarea {
 
 /* Services Container */
 
+.services {
+	background-color: var(--dark-color);
+	/* color: var(--white); */
+	margin-top: 20px;
+}
+
 .services-title {
-	color: var(--dark-color);
+	color: var(--white);
 	text-decoration: underline;
 	display: grid;
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 0px;
+	padding-top: 40px;
 }
 
 .services-container {
 	display: grid;
 	grid-template-columns: auto auto auto auto auto;
-	background-color: var(--primary-color);
+	/* background-color: var(--primary-color); */
 	padding: 35px;
 }
 
