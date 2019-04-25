@@ -5,7 +5,12 @@
 	<meta charset="UTF-8" />
 	<title>Utility Vault</title>
 
-	<link rel="icon" type="image/png" href="assets/img/logo/favicon-32x32.png" sizes="32x32" />
+	<link
+		rel="icon"
+		type="image/png"
+		href="assets/img/logo/favicon-32x32.png"
+		sizes="32x32"
+	/>
 
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="../services/css/dictionary.css" />
@@ -15,115 +20,6 @@
 	<link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
 
 	<link rel="stylesheet" href="../assets/css/plugins/busyload/busyload.min.css" />
-
-	<style>
-		@import url('https://fonts.googleapis.com/css?family=Roboto');
-
-		.word-container {
-			font-family: 'Roboto';
-			display: none;
-			width: 100%;
-			background: #fff;
-			opacity: 0.6;
-			/* position: absolute; */
-			border-radius: 10px;
-			/* top:250px; */
-			color: #000;
-			padding: 15px 20px;
-			box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25), 0 10px 30px rgba(0, 0, 0, 0.22);
-			transition: all 0.4s;
-		}
-
-		.form-control {
-			margin: 0;
-		}
-
-		.grammar-info {}
-
-		.word-searched {
-			display: inline-block;
-			font-weight: 500;
-		}
-
-		.phonetic {
-			margin-left: 10px;
-			font-size: 13px;
-		}
-
-		[class^="definition-list"] {
-			margin-left: 30px;
-			margin-top: 10px;
-			list-style-type: decimal;
-		}
-
-		[class^="example-list"] {
-			margin-left: 30px;
-			margin-bottom: 5px;
-			list-style-type: disc;
-		}
-
-		@-webkit-keyframes spin {
-			to {
-				-webkit-transform: rotate(360deg);
-				transform: rotate(360deg);
-			}
-		}
-
-		@keyframes spin {
-			to {
-				-webkit-transform: rotate(360deg);
-				transform: rotate(360deg);
-			}
-		}
-
-		.stroke-dotted {
-			opacity: 0;
-			stroke-dasharray: 4, 5;
-			stroke-width: 1px;
-			-webkit-transform-origin: 50% 50%;
-			transform-origin: 50% 50%;
-			-webkit-animation: spin 4s infinite linear;
-			animation: spin 4s infinite linear;
-			transition: opacity 1s ease, stroke-width 1s ease;
-		}
-
-		.stroke-solid {
-			stroke-dashoffset: 0;
-			stroke-dashArray: 300;
-			stroke-width: 4px;
-			transition: stroke-dashoffset 1s ease, opacity 1s ease;
-		}
-
-		.icon {
-			-webkit-transform-origin: 50% 50%;
-			transform-origin: 50% 50%;
-			transition: -webkit-transform 200ms ease-out;
-			transition: transform 200ms ease-out;
-			transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
-		}
-
-		#play:hover .stroke-dotted {
-			stroke-width: 4px;
-			opacity: 1;
-		}
-
-		#play:hover .stroke-solid {
-			opacity: 0;
-			stroke-dashoffset: 300;
-		}
-
-		#play:hover .icon {
-			-webkit-transform: scale(1.05);
-			transform: scale(1.05);
-		}
-
-		.play-btn {
-			cursor: pointer;
-			position: absolute;
-			right: 30px;
-			top: 10px;
-		}
-	</style>
 </head>
 
 <body>
@@ -189,15 +85,8 @@
 				</div>
 			</div>
 		</div>
-
-
-
 	</div>
 
-	<!-- Footer -->
-	<footer>
-		<p>Copyright &copy; 2019</p>
-	</footer>
 
 	<!-- jQuery -->
 	<script src="../assets/js/jquery.js"></script>
