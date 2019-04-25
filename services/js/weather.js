@@ -3,6 +3,7 @@
 */
 
 $(() => {
+
 	$(".submit").on("click", () => {
 		let city = $.trim($(".search").val());
 
@@ -14,8 +15,13 @@ $(() => {
 			dataType: "jsonp",
 			success: function(data) {
 				console.log(data);
-				$(".summary").text(data.weather[0].main);
-				$(".temperature").text(data.main.temp);
+				
+				$(".weather").css('display', 'initial');
+
+				$(".temp").html(Math.floor(data.main.temp) + "&deg;");
+				$(".location").text(data.name);
+				$(".rain").text(data.clouds.all + "MM");
+				$(".wind").text(data.wind.speed + "KMPH");
 			},
 			error: function(error) {
 				console.log(error);

@@ -31,7 +31,7 @@
 	display: block;
 	font-weight: 300;
 	color: rgb(255, 255, 255);
-	padding: 20px 0 0;
+	padding: 20px 15px 0;
 }
 .location{
 	color: rgb(255, 255, 255);
@@ -54,7 +54,7 @@
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	background: rgb(42, 178, 234);
+	background: #28A745;
 	font-weight: 700;
 	color: rgb(255, 255, 255);
 	text-align: center;
