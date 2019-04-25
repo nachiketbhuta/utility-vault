@@ -1,65 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<title>Utility Vault</title>
 
-		<link
-			rel="icon"
-			type="image/png"
-			href="assets/img/logo/favicon-32x32.png"
-			sizes="32x32"
-		/>
+<head>
+	<meta charset="UTF-8" />
+	<title>Utility Vault</title>
 
-		<link rel="icon" href="../assets/img/logo/favicon.ico" sizes="32x32" />
+	<link rel="icon" type="image/png" href="assets/img/logo/favicon-32x32.png" sizes="32x32" />
 
-		<!-- Custom CSS -->
-		<link rel="stylesheet" href="../services/css/images.css" />
-		<link rel="stylesheet" href="../style.css" />
+	<link rel="icon" href="../assets/img/logo/favicon.ico" sizes="32x32" />
 
-		<!-- Light Gallery CSS -->
-		<link
-			type="text/css"
-			rel="stylesheet"
-			href="../assets/css/plugins/lightbox/lightbox.min.css"
-		/>
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="../services/css/images.css" />
+	<link rel="stylesheet" href="../style.css" />
 
-		<!-- Bootstrap -->
-		<!-- <link rel="stylesheet" href="../assets/css/bootstrap.min.css" /> -->
+	<!-- Light Gallery CSS -->
+	<link type="text/css" rel="stylesheet" href="../assets/css/plugins/lightbox/lightbox.min.css" />
 
-		<!-- Lightbox JS -->
-		<script src="../assets/js/plugins/lightbox/lightbox-plus-jquery.min.js"></script>
-	</head>
-	<body>
-		<!-- Header-->
-		<!-- Navigation Bar -->
-		<nav class="main-nav" style="border: none;">
-			<ul>
-				<li style="float:left;"><a href="../index.html">Utility Vault</a></li>
-				<li style="text-decoration: underline;">
-					<a href="../pages/converter.html">Converter</a>
-				</li>
-				<li><a href="../pages/news.html">News</a></li>
-				<li><a href="../pages/dictionary.html">Dictionary</a></li>
-				<li><a href="../pages/weather.html">Weather</a></li>
-				<li><a href="../pages/images.html">Images</a></li>
-			</ul>
+	<link type="text/css" rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+
+	<link rel="stylesheet" href="../assets/css/plugins/busyload/busyload.min.css" />
+	<link rel="stylesheet" href="../assets/css/style.css" />
+
+	<style>
+		.form-control {
+			margin: 0;
+		}
+
+		.grid-sizer,
+		.grid-item {
+			width: 33.2%;
+		}
+
+		.grid-item {
+			float: left;
+			/* margin-bottom: 10px; */
+		}
+
+		/* images cover up the gap */
+		.grid-item a img {
+			display: block;
+			width: 100.5%;
+		}
+
+		.popular-tags>li {
+			cursor: pointer;
+			margin-bottom: 6px;
+			transition: all 0.4s;
+		}
+
+		.popular-tags>li:hover {
+			font-size: 16px;
+		}
+
+		.toast-error {
+			background-color: #BD362F !important;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<header>
+		<nav class="navbar navbar-default animated navbar-expand-lg navbar-light fixed-top">
+			<a class="navbar-brand" href="#">
+				<img id="logo" src="../assets/img/logo/logo-3.png" alt="" height="50" width="50"></img>
+				<span>utility<em>vault</em></span>
+			</a>
+			<button class="navbar-toggler d-lg-none navbar-toggler-button" type="button" data-toggle="collapse"
+				data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<div class="animated-icon">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavId">
+				<ul id="navbarItemList" class="navbar-nav ml-auto mt-2 mt-lg-0">
+					<li class="nav-item"><a class="nav-link" href="../index.html">Home<span
+								class="sr-only">(current)</span></a></li>
+					<li class="nav-item"><a class="nav-link" href="converter.html">Converter</a></li>
+					<li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+					<li class="nav-item"><a class="nav-link" href="dictionary.html">Dictionary</a></li>
+					<li class="nav-item"><a class="nav-link" href="weather.html">Weather</a></li>
+					<li class="nav-item active"><a class="nav-link" href="#">Images</a></li>
+				</ul>
+			</div>
 		</nav>
+	</header>
 
-		<div class="input-container">
-			<center>
-				<input class="search" type="text" placeholder="Enter topic" />
-				<button type="submit" class="submit">Search</button>
-			</center>
-		</div>
+	<div class="container-fluid">
 
 		<div class="row">
-			<div class="img-container"></div>
+			<div class="col-md-6 offset-md-3">
+				<!-- d-flex justify-content-center align-items-center -->
+				<div class="">
+					<form role="form">
+						<div class="input-group">
+							<!-- <label for="search-field">Search Image</label> -->
+							<input class="form-control" id="search-field" type="text" placeholder="Enter topic" />
+							<div class="input-group-append">
+								<button class="btn btn-outline-primary" id="searchBtn" type="button">Search</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
 
-			<div class="suggestion-container">
+		<div class="row mt-5">
+			<div class="col-md-9">
+				<div class="container">
+					<div class="gallery-grid">
+						<div class="grid-sizer"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
 				<div class="suggestions">
 					<h3>Popular searches</h3>
-					<ul>
+					<ul class="popular-tags">
 						<li>Holi</li>
 						<li>Twitter</li>
 						<li>Landscape</li>
@@ -70,17 +135,39 @@
 			</div>
 		</div>
 
-		<!-- Footer -->
-		<!-- <footer><p>Copyright &copy; 2019</p></footer> -->
 
-		<!-- jQuery -->
-		<script src="../assets/js/jquery.js"></script>
+	</div>
 
-		<!-- Bootstrap JS Files-->
-		<script src="../assets/js/popper.min.js"></script>
-		<script src="../assets/js/bootstrap.min.js"></script>
 
-		<!-- Custom JS -->
-		<script src="../services/js/images.js"></script>
-	</body>
+
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="footer-copyright text-center">
+			<p class="footer-text ">&copy; 2019 Made with <i class=" love fa fa-heartbeat"></i> for you!</p>
+		</div>
+	</footer>
+
+	<!-- <footer><p>Copyright &copy; 2019</p></footer> -->
+
+	<!-- jQuery -->
+	<script src="../assets/js/jquery.js"></script>
+
+	<!-- Bootstrap JS Files-->
+	<script src="../assets/js/popper.min.js"></script>
+	<script src="../assets/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+	<script src="https://imagesloaded.desandro.com/imagesloaded.pkgd.min.js"></script>
+
+
+
+	<!-- Lightbox JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.0/js/lightbox.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+	<script src="../assets/js/plugins/busyload/busyload.min.js"></script>
+
+	<script src="../services/js/images.js"></script>
+</body>
+
 </html>

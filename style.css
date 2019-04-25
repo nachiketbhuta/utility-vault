@@ -411,9 +411,20 @@ audio:not([controls]) {
 /* Footer */
 footer {
 	margin-top: 20px;
-	position: relative !important;
+	/* position: relative !important; */
 }
 
 footer>div {
 	padding: 0.5px !important;
 }
+
+.container-fluid{
+	padding-top: 110px !important;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px !important;
+  }
