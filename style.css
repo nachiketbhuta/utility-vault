@@ -327,7 +327,7 @@ textarea {
 	color: var(--white);
 }
 
-.news-container {
+.news-service-container {
 	display: flex;
 	flex-direction: column;
 	color: var(--white);
@@ -372,7 +372,7 @@ textarea {
 	padding: 5px;
 }
 
-.news-content {
+.news-service-content {
 	padding: 4px;
 	text-align: center;
 }

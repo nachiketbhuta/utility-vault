@@ -30,7 +30,7 @@ $(() => {
 				                    <h3>${value['title']}</h3>
 				                    <p>${value['description']}</p>
                                     <span>Author: ${value['author']}</span><br>
-                                    <a href=${value['url']}>Link to this article</a>
+                                    <a class="news-link" href=${value['url']}>Link to this article</a>
 			                    </div>
 		                    </div>
                         `);

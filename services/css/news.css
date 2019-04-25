@@ -24,14 +24,21 @@ input[type="text"] {
 }
 
 .news {
-    border: 1px solid black;
-    display: flex;
+  border: 1px solid black;
+  margin: 35px;
+  display: grid;
+  grid-template-columns: 1fr auto;
 }
 
-.news-image {
-    flex: 1;
+.news-image > img {
+  margin: 10px 15px 10px 15px;
 }
 
 .news-content {
-    flex: 3;
+  padding: 2px;
+}
+
+.news-link {
+  float: right;
+  padding-right: 15px;
 }
