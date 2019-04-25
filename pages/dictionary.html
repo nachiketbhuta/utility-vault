@@ -17,6 +17,51 @@
 
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+
+		<style>
+			@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+			.word-container{
+				font-family: 'Roboto';
+				display: none;
+				width:60%;
+				background: #fff;
+				opacity: 0.6;
+				position: absolute;
+				border-radius: 10px;
+				top:250px;
+				color: #000;
+				padding: 15px 20px;
+				box-shadow: 0 14px 30px rgba(0,0,0,0.25), 0 10px 30px rgba(0,0,0,0.22);
+				transition: all 0.4s;
+			}
+
+			.grammar-info{
+				
+			}
+
+			.word-searched{
+				display: inline-block;
+				font-weight: 500;
+			}
+
+			.pronounciation{
+				margin-left: 10px;
+				font-size: 13px;
+			}
+
+			.definition-list{
+				margin-left: 30px;
+				margin-top: 10px;
+				list-style-type: disc;
+			}
+
+			.example-list{
+				margin-left: 30px;
+				margin-top: 10px;
+				list-style-type: disc;
+			}
+		</style>
 	</head>
 	<body>
 		<!-- Header-->
@@ -47,6 +92,30 @@
 				/>
 			</div>
 			<button type="submit" class="btn btn-primary" id="submit">Submit</button>
+
+			<div class="dictionary-container">
+				<div class="word-container">
+					<h3 class="word-searched"></h3><small class="pronounciation">&nbsp;</small>
+
+					<div class="word-info">
+						<p class="grammar-info"><i></i></p>
+						<div class="definitions">
+							Definitions
+							<ul class="definition-list">
+								<!-- <li>A qualified practitioner of medicine; a physician</li> -->
+								<!-- <li>A person who holds a doctorate.</li> -->
+							</ul>
+						</div>
+						<div class="examples">
+							Exmaples
+							<ul class="example-list">
+								<!-- <li>he was made a Doctor of Divinity</li> -->
+								<!-- <li></li> -->
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<!-- Footer -->
