@@ -59,4 +59,9 @@ $(document).ready(function() {
 			$("#text").slideUp();
 		}
 	});
+
+	$(window).resize(function(){
+		var h = $('nav').height();
+		$('.container-fluid').css('padding-top',h);
+	});
 });
