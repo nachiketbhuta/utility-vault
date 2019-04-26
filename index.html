@@ -12,6 +12,7 @@
 			sizes="32x32"
 		/>
 		<!-- Custom CSS -->
+		<link rel="stylesheet" href="./assets/css/style.css">
 		<link rel="stylesheet" href="style.css" />
 
 		<link
@@ -21,14 +22,25 @@
 			crossorigin="anonymous"
 		/>
 
-		<!-- <link rel="stylesheet" href="./assets/css/bootstrap.min.css"> -->
+		<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
 
 		<title>Utility Vault | Home</title>
+
+		<style>
+			.container-fluid{
+				padding-top: 71px !important;
+				padding-left: 0px !important;
+				padding-right: 0px !important;
+			}	
+			.footer {
+				position: relative !important;
+			}
+		</style>
 	</head>
 
 	<body>
 		<!-- Navigation Bar -->
-		<section>
+		<!-- 
 			<nav class="main-nav" style="border: none;">
 				<ul>
 					<li style="float:left;"><a href="../index.html">Utility Vault</a></li>
@@ -40,8 +52,41 @@
 					<li><a href="../pages/weather.html">Weather</a></li>
 					<li><a href="../pages/images.html">Images</a></li>
 				</ul>
+			</nav -->
+		<header>
+			<nav class="navbar navbar-default animated navbar-expand-lg navbar-light fixed-top">
+				<a class="navbar-brand" href="#">
+					<img id="logo" src="../assets/img/logo/logo-3.png" alt="" height="50" width="50"></img>
+					<span>utility<em>vault</em></span>
+				</a>
+				<button class="navbar-toggler d-lg-none navbar-toggler-button" type="button" data-toggle="collapse"
+					data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<div class="animated-icon">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</button>
+				<div class="collapse navbar-collapse" id="collapsibleNavId">
+					<ul id="navbarItemList" class="navbar-nav ml-auto mt-2 mt-lg-0">
+						<li class="nav-item"><a class="nav-link" href="../index.html">Home<span
+									class="sr-only">(current)</span></a></li>
+						<li class="nav-item"><a class="nav-link" href="converter.html">Converter</a></li>
+						<li class="nav-item active"><a class="nav-link" href="news.html">News</a></li>
+						<li class="nav-item"><a class="nav-link" href="dictionary.html">Dictionary</a></li>
+						<li class="nav-item"><a class="nav-link" href="weather.html">Weather</a></li>
+						<li class="nav-item"><a class="nav-link" href="images.html">Images</a></li>
+					</ul>
+				</div>
 			</nav>
+		</header>
 
+		<div class="container-fluid">
+			
+		
+		<section>
 			<!-- Image Slider -->
 			<div class="image-container">
 				<div class="slider">
@@ -194,7 +239,13 @@
 				</div>
 			</div>
 		</section>
+		</div>
 
+		<footer class="footer">
+				<div class="footer-copyright text-center">
+					<p class="footer-text ">&copy; 2019 Made with <i class=" love fa fa-heartbeat"></i> for you!</p>
+				</div>
+			</footer>
 
 		<!-- JS Files -->
 		<script src="assets/js/jquery.js"></script>

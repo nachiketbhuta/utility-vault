@@ -37,6 +37,7 @@ $(() => {
                             </div>
                         `);
                     });
+                    $('.footer').css('position','relative');
                 }
                 else {
                     $('.img-container').append('<p class="not_found">There are no images found on this topic.</p>');
