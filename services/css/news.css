@@ -52,13 +52,26 @@ input[type="text"] {
 }
 
 .news-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	padding: 10px;
+	display: flex;
+	/* grid-template-columns: 1fr 1fr 1fr; */
 	margin-top: 20px;
-	justify-content: space-between;
+	/* grid-gap: 10px; */
+	flex-direction: column;
+	justify-content: center;
+	/* margin-top: 10px; */
+	/* justify-content: space-between; */
 }
 
 .card {
-	margin: 10px 5px;
+	margin-top: 10px;
 }
+
+@media (min-width: 768px) {
+	.news-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 10px;
+		justify-content: space-between;
+	}
+}
+  

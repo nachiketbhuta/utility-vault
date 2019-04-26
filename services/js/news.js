@@ -3,8 +3,28 @@ API FOR Images:- https://pixabay.com/api/
 */
 
 $(() => {
+
+    toastr.options = {
+        "closeButton": true,
+        "debug": false,
+        "newestOnTop": false,
+        "progressBar": false,
+        "positionClass": "toast-top-right",
+        "preventDuplicates": true,
+        "onclick": null,
+        "showDuration": "30000",
+        "hideDuration": "10000",
+        "timeOut": "50000",
+        "extendedTimeOut": "10000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+      }
+
     $(".submit").on('click', (e) => {
         e.preventDefault();
+        $.busyLoadFull('show');
         const searchText = $.trim($(".search").val()); 
         const URL = `https://newsapi.org/v2/everything?apiKey=18aecab4df0d462082f5801c0cf06172&q=${encodeURIComponent(searchText)}`;
 
@@ -14,7 +34,6 @@ $(() => {
             success: function (data) {
                 let articles = data.articles;
                 console.log(articles);
-
                 $('.news').remove();
 
                 if (articles.length > 0) {
@@ -40,11 +59,15 @@ $(() => {
                     $('.footer').css('position','relative');
                 }
                 else {
-                    $('.img-container').append('<p class="not_found">There are no images found on this topic.</p>');
+                    toastr['error']("No news related to your query were found");
+                    $('.search').val("");
                 }
+                $.busyLoadFull('hide');
             },
             error: function (error) {
                 console.log(error);
+                $.busyLoadFull('hide');
+                toastr.error("Some error occured. Please contact admin");
             }
         })
     });
