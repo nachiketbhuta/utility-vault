@@ -18,6 +18,12 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.2/css/weather-icons.min.css">
+
+		<!-- Busyload -->
+		<link rel="stylesheet" href="../assets/css/plugins/busyload/busyload.min.css" />
+
+		<link type="text/css" rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
 		<style>
 			.btn-outline-primary:hover {
 			background-color: #28A745;
@@ -78,7 +84,7 @@
 							<span class="location"></span>
 						</div>
 						<div class="currentWeather">
-							<span class="conditions">&#xf00d;</span>
+							<span class="conditions"><img id="weatherIcon" src="" alt=""></span>
 							<div class="info">
 								<span class="rain"></span>
 								<span class="wind"></span>
@@ -90,7 +96,7 @@
 		</div>
 
 		<!-- Footer -->
-	<footer class="footer">
+		<footer class="footer">
 			<div class="footer-copyright text-center">
 				<p class="footer-text ">&copy; 2019 Made with <i class=" love fa fa-heartbeat"></i> for you!</p>
 			</div>
@@ -102,6 +108,9 @@
 		<!-- Bootstrap JS Files-->
 		<script src="../assets/js/popper.min.js"></script>
 		<script src="../assets/js/bootstrap.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+		<script src="../assets/js/plugins/busyload/busyload.min.js"></script>
 
 		<!-- Custom JS -->
 		<script src="../services/js/weather.js"></script>
