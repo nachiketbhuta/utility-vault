@@ -1,5 +1,6 @@
 /*
-    http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=c3584b224afd6dcc0b75b8e0d69f4a93&units=metric
+	http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=c3584b224afd6dcc0b75b8e0d69f4a93&units=metric
+	http://openweathermap.org/img/w/${icon}.png
 */
 
 $(() => {
