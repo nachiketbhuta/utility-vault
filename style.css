@@ -65,12 +65,13 @@ ol {
 .image-container {
 	width: 100%;
 	height: 100%;
+	margin-top: 75px !important;
 }
 
 .slider {
 	position: relative;
 	width: 100%;
-	height: 400px;
+	height: 430px;
 }
 
 .slide {
@@ -89,14 +90,16 @@ ol {
 
 .buttons button#next {
 	position: absolute;
-	top: 35%;
+	top: 40%;
 	right: 15px;
+	outline: none;
 }
 
 .buttons button#prev {
 	position: absolute;
-	top: 35%;
+	top: 40%;
 	left: 15px;
+	outline: none;
 }
 
 .buttons button {
