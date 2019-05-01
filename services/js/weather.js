@@ -1,6 +1,6 @@
 /*
-	http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=c3584b224afd6dcc0b75b8e0d69f4a93&units=metric
-	http://openweathermap.org/img/w/${icon}.png
+	https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=c3584b224afd6dcc0b75b8e0d69f4a93&units=metric
+	https://openweathermap.org/img/w/${icon}.png
 */
 $(() => {
     toastr.options = {
@@ -24,7 +24,7 @@ $(() => {
         e.preventDefault();
         $.busyLoadFull('show');
         let city = $.trim($(".search").val());
-        const URL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=c3584b224afd6dcc0b75b8e0d69f4a93&units=metric`;
+        const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=c3584b224afd6dcc0b75b8e0d69f4a93&units=metric`;
         $.get({
             url: URL,
             cors: true,
