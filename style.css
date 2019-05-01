@@ -113,8 +113,9 @@ ol {
 }
 
 .buttons button:hover {
-	background-color: #fff;
-	color: #333;
+	background-color: #28A745;
+	color: #fff;
+	border: 2px solid #fff;
 }
 
 @media (max-width: 500px) {
@@ -290,26 +291,34 @@ textarea {
 
 /* Services Container */
 
+
 .services {
-	background-color: var(--dark-color);
+	background-color: #28A745;
 	/* color: var(--white); */
-	margin-top: 20px;
+	/*margin-top: 20px;*/
 }
 
 .services-title {
-	color: var(--white);
-	text-decoration: underline;
+	color: #F1F1F1;
 	display: grid;
 	text-align: center;
 	margin-top: 0px;
-	padding-top: 40px;
+	padding-top: 60px;
+	font-family: 'Open Sans';
+	font-size: 30px;
+	font-weight: 900;
 }
 
 .services-container {
 	display: grid;
 	grid-template-columns: auto auto auto auto auto;
 	/* background-color: var(--primary-color); */
-	padding: 35px;
+	padding-top: 60px;
+	padding-bottom: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
+	grid-gap: 15px;
+	grid-row-gap: 30px;
 }
 
 .currency-container {
@@ -317,13 +326,13 @@ textarea {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	color: var(--white);
+	color: #F1F1F1;
 }
 
 .news-service-container {
 	display: flex;
 	flex-direction: column;
-	color: var(--white);
+	color: #F1F1F1;
 	justify-content: center;
 	align-items: center;
 }
@@ -331,7 +340,7 @@ textarea {
 .dictionary-container {
 	display: flex;
 	flex-direction: column;
-	color: var(--white);
+	color: #F1F1F1;
 	justify-content: center;
 	align-items: center;
 }
@@ -339,7 +348,7 @@ textarea {
 .weather-container {
 	display: flex;
 	flex-direction: column;
-	color: var(--white);
+	color: #F1F1F1;
 	justify-content: center;
 	align-items: center;
 }
@@ -347,7 +356,7 @@ textarea {
 .images-container {
 	display: flex;
 	flex-direction: column;
-	color: var(--white);
+	color: #F1F1F1;
 	justify-content: center;
 	align-items: center;
 }
@@ -359,6 +368,9 @@ textarea {
 .currency-content {
 	padding: 4px;
 	text-align: center;
+	font-family: 'Open Sans';
+	font-size: 18px;
+	font-weight: 800;
 }
 
 .news-logo {
@@ -368,6 +380,9 @@ textarea {
 .news-service-content {
 	padding: 4px;
 	text-align: center;
+	font-family: 'Open Sans';
+	font-size: 18px;
+	font-weight: 800;
 }
 
 .dictionary-logo {
@@ -377,6 +392,9 @@ textarea {
 .dictionary-content {
 	padding: 4px;
 	text-align: center;
+	font-family: 'Open Sans';
+	font-size: 18px;
+	font-weight: 800;
 }
 
 .weather-logo {
@@ -386,6 +404,9 @@ textarea {
 .weather-content {
 	padding: 4px;
 	text-align: center;
+	font-family: 'Open Sans';
+	font-size: 18px;
+	font-weight: 800;
 }
 
 .images-logo {
@@ -395,6 +416,9 @@ textarea {
 .images-content {
 	padding: 4px;
 	text-align: center;
+	font-family: 'Open Sans';
+	font-size: 18px;
+	font-weight: 800;
 }
 
 audio:not([controls]) {
