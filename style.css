@@ -133,27 +133,27 @@ ol {
 /* Backgorund Images */
 
 .slide:first-child {
-	background: url("https://source.unsplash.com/zYx5rjk8dfU/1600x400") no-repeat
+	background: url("./assets/imgs/slider-imgs/currency.jpg") no-repeat
 		center top/cover;
 }
 
 .slide:nth-child(2) {
-	background: url("https://source.unsplash.com/Mwuod2cm8g4/1600x400") no-repeat
+	background: url("./assets/imgs/slider-imgs/news.jpg") no-repeat
 		center top/cover;
 }
 
 .slide:nth-child(3) {
-	background: url("https://source.unsplash.com/fgmf2Eyrwm4/1600x400") no-repeat
+	background: url("./assets/imgs/slider-imgs/dictionary.jpg") no-repeat
 		center top/cover;
 }
 
 .slide:nth-child(4) {
-	background: url("https://source.unsplash.com/WfCmNom4M4Q/1600x400") no-repeat
+	background: url("./assets/imgs/slider-imgs/weather.jpg") no-repeat
 		center top/cover;
 }
 
 .slide:nth-child(5) {
-	background: url("https://source.unsplash.com/VVBD_bjk7c8/1600x400") no-repeat
+	background: url("./assets/imgs/slider-imgs/images.jpg") no-repeat
 		center top/cover;
 }
 
