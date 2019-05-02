@@ -165,6 +165,7 @@ ol {
 	align-content: center;
 	align-items: center;
 	flex-direction: column;
+	background-color: #19692c;
 }
 
 .about-content {
@@ -175,50 +176,68 @@ ol {
 }
 
 .about-title {
-	color: var(--dark-color);
-	text-decoration: underline;
+	color: #e6e6e6;
+	padding-top: 60px;
+	font-family: 'Open Sans';
+	font-size: 30px;
+	font-weight: 500;
 }
 
 #upper-text {
-	text-align: justify;
+	padding-top: 20px;
+	text-align: justify-all;
+	font-size: 20px !important;
+	color: #fff !important;
 }
 
 #text {
 	display: none;
-	text-align: justify;
+	text-align: justify-all;
 	margin-bottom: 10px;
+	padding-top: 20px;
+	font-size: 20px !important;
+	color: #fff !important;
 }
 
 .btn-container {
-	margin: auto;
-	height: 44px;
-	width: 166.23px;
-	margin-bottom: 12px;
+	/*margin: auto;*/
+	height: 55px;
+	width: 180px;
+	margin-bottom: 40px;
+	/*padding-bottom: 20px;*/
 }
 
 #toggle {
-	user-select: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
 	cursor: pointer;
 	border: none;
-	padding: 8px;
+	margin-top: 20px;
 	font-size: 20px;
-	background: var(--primary-color);
-	color: white;
-	font-family: cursive;
+	background: #011910;
+	color: #e3e3e3;
+	font-family: 'Open Sans';
 	box-sizing: border-box;
+	padding: 10px;
+	outline: none;
+	border-radius: 10px;
 }
 
 /* Contact Form Container */
 
 .contact-form-container {
 	display: flex;
-	justify-content: space-around;
-	align-content: center;
+	/*align-content: center;*/
 	align-items: center;
-	flex-direction: column;
+	flex-direction: row;
+}
+
+.company-details {
+	flex: 1;
+	height: 359px;
+}
+
+.contact-form-section {
+	flex: 1;
+	margin: 20px 0px;
 }
 
 #contact-form {
@@ -229,8 +248,7 @@ ol {
 	padding: 2%;
 	border-radius: 2px;
 	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-	flex: 2;
-	margin-top: 2em;
+	/*flex: 1;*/
 }
 
 .contact-title {
@@ -293,13 +311,13 @@ textarea {
 
 
 .services {
-	background-color: #28A745;
+	background-color: #f1f1f1;
 	/* color: var(--white); */
-	/*margin-top: 20px;*/
+	padding-bottom: 30px;
 }
 
 .services-title {
-	color: #F1F1F1;
+	color: #3E3F3A ;
 	display: grid;
 	text-align: center;
 	margin-top: 0px;
@@ -326,47 +344,77 @@ textarea {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	color: #F1F1F1;
+	color: #3E3F3A;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	 border-radius: 10px;
+}
+
+.currency-container:hover {
+  transform: scale(0.9);
 }
 
 .news-service-container {
 	display: flex;
 	flex-direction: column;
-	color: #F1F1F1;
+	color: #3E3F3A;
 	justify-content: center;
 	align-items: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	 border-radius: 10px;
+}
+
+.news-service-container:hover {
+  transform: scale(0.9);
 }
 
 .dictionary-container {
 	display: flex;
 	flex-direction: column;
-	color: #F1F1F1;
+	color: #3E3F3A;
 	justify-content: center;
 	align-items: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	 border-radius: 10px;
+}
+
+.dictionary-container:hover {
+  transform: scale(0.9);
 }
 
 .weather-container {
 	display: flex;
 	flex-direction: column;
-	color: #F1F1F1;
+	color: #3E3F3A;
 	justify-content: center;
 	align-items: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	 border-radius: 10px;
+}
+
+.weather-container:hover {
+  transform: scale(0.9);
 }
 
 .images-container {
 	display: flex;
 	flex-direction: column;
-	color: #F1F1F1;
+	color: #3E3F3A;
 	justify-content: center;
 	align-items: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	 border-radius: 10px;
+}
+
+.images-container:hover {
+  transform: scale(0.9);
 }
 
 .currency-logo {
-	padding: 5px;
+	padding: 10px;
 }
 
 .currency-content {
-	padding: 4px;
+	padding: 7px;
 	text-align: center;
 	font-family: 'Open Sans';
 	font-size: 18px;
@@ -374,11 +422,12 @@ textarea {
 }
 
 .news-logo {
-	padding: 5px;
+	padding: 10px;
+
 }
 
 .news-service-content {
-	padding: 4px;
+	padding: 7px;
 	text-align: center;
 	font-family: 'Open Sans';
 	font-size: 18px;
@@ -386,11 +435,11 @@ textarea {
 }
 
 .dictionary-logo {
-	padding: 5px;
+	padding: 10px;
 }
 
 .dictionary-content {
-	padding: 4px;
+	padding: 7px;
 	text-align: center;
 	font-family: 'Open Sans';
 	font-size: 18px;
@@ -398,11 +447,11 @@ textarea {
 }
 
 .weather-logo {
-	padding: 5px;
+	padding: 10px;
 }
 
 .weather-content {
-	padding: 4px;
+	padding: 7px;
 	text-align: center;
 	font-family: 'Open Sans';
 	font-size: 18px;
@@ -410,11 +459,11 @@ textarea {
 }
 
 .images-logo {
-	padding: 5px;
+	padding: 10px;
 }
 
 .images-content {
-	padding: 4px;
+	padding: 7px;
 	text-align: center;
 	font-family: 'Open Sans';
 	font-size: 18px;
