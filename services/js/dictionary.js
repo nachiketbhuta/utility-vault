@@ -44,7 +44,7 @@ $(() => {
             cors: true,
             secure: true,
             success: function (data) {
-                $(".footer").css('position', 'relative');
+                // $(".footer").css('position', 'relative');
                 showMeaning(data[0]);
             },
             error: function (error) {
