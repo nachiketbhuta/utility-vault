@@ -12,16 +12,28 @@ $(() => {
 
     $.get('../services/misc/curr_data.json',function(data){
         curr_data = data;
-    },'json');
+    },'json').done(function(){
+        $.each(CURRENCIES, function (index, value) {
+            var curr_full = "";
+            $.each(curr_data, function(sub_index, select_val){
+                if(select_val['curr_short'] == value){
+                    curr_full = select_val['curr_full'];
+                }
+            });
 
-    $.each(CURRENCIES, function (index, value) {
-        $('#from').append($("<option></option>")
-            .attr("value", value)
-            .text(value));
-        $('#to').append($("<option></option>")
-            .attr("value", value)
-            .text(value));
+            if(curr_full != ""){
+                $('#from').append($("<option></option>")
+                    .attr("value", value)
+                    .text(value + " - " + curr_full));
+                $('#to').append($("<option></option>")
+                    .attr("value", value)
+                    .text(value + " - " + curr_full));
+            }
+
+        });
     });
+
+
 
     $('#from_amt').keydown(function (e) {
         if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
