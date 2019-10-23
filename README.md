@@ -9,3 +9,5 @@
 - Dictionary
 - Weather Forecast
 - Image Gallery
+- Test
+- Test2
