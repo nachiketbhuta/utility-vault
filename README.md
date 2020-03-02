@@ -1,10 +1,9 @@
 <h1 align="center">Utility Vault</h1>
 
-<div align="center">
 [![](https://img.shields.io/badge/Made_with-JavaScript-red?style=for-the-badge&logo=javascript)]("Javascript")
 [![](https://img.shields.io/badge/Made_with-css3-red?style=for-the-badge&logo=css3)]("CSS3")
 [![](https://img.shields.io/badge/Made_with-html5-red?style=for-the-badge&logo=html5)]("HTML5")
-</div>
+
 
 **Utility Vault is a web based utility manager for all common day to day life.**
 
